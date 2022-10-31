@@ -20,11 +20,11 @@ public class Country {
     
     private static final Map<String, String> continents = new HashMap<>();
     static {
-        continents.put("Africa", "1");
-        continents.put("America", "2");
-        continents.put("Asia", "3");
-        continents.put("Oceania", "4");
-        continents.put("Europe", "5");
+        continents.put("africa", "1");
+        continents.put("america", "2");
+        continents.put("asia", "3");
+        continents.put("oceania", "4");
+        continents.put("europe", "5");
     }
     
     
@@ -40,7 +40,7 @@ public class Country {
         
         String[] nameArr = name.split("");
    
-        countryCode = nameArr[0]+nameArr[1]+nameArr[2]+'-'+continents.get(givenContinent);
+        countryCode = nameArr[0]+nameArr[1]+nameArr[2]+'-'+continents.get(givenContinent.toLowerCase());
 
     }
     
