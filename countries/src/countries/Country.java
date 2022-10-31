@@ -64,4 +64,12 @@ public class Country {
         return population;
     }
  
+    
+    public void setArea(double newArea){
+        area = newArea;
+    }
+    
+    public void setPopulation(double newPopulation){
+        area = newPopulation;
+    }
 }
