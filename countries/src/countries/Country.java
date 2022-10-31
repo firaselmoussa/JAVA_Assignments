@@ -72,4 +72,8 @@ public class Country {
     public void setPopulation(double newPopulation){
         area = newPopulation;
     }
+    
+    public String toString(){
+        return name + "'s population is " + population + " and its code is " + countryCode;
+    }
 }
