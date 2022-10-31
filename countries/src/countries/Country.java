@@ -39,10 +39,8 @@ public class Country {
         continent = givenContinent;
         area = givenArea;
         population = givenPopulation;
-        
-        String[] nameArr = name.split("");
    
-        countryCode = nameArr[0]+nameArr[1]+nameArr[2]+'-'+continents.get(givenContinent.toLowerCase());
+        countryCode = givenName.substring(0, 3) +'-'+continents.get(givenContinent.toLowerCase());
 
     }
     
