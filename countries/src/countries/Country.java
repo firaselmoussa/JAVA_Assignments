@@ -43,5 +43,25 @@ public class Country {
         countryCode = nameArr[0]+nameArr[1]+nameArr[2]+'-'+continents.get(givenContinent);
 
     }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getContinent(){
+        return continent;
+    }
+    
+    public String getCountryCode(){
+        return countryCode;
+    }
+    
+    public double getArea(){
+        return area;
+    }
+    
+    public int getPopulation(){
+        return population;
+    }
  
 }
