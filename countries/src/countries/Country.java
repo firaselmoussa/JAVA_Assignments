@@ -40,6 +40,7 @@ public class Country {
         area = givenArea;
         population = givenPopulation;
    
+//        extracting country code
         countryCode = givenName.substring(0, 3) +'-'+continents.get(givenContinent.toLowerCase());
 
     }
@@ -76,6 +77,6 @@ public class Country {
     
 //    To String method
     public String toString(){
-        return name + "'s population is " + population + " and its code is " + countryCode;
+        return name + "'s population is " + population + ", area is" + area + ", population is" + population +"and its code is " + countryCode;
     }
 }
