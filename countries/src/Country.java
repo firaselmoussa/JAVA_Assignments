@@ -9,4 +9,9 @@
  */
 public class Country {
     
+    private String name, countryCode, continent;
+    private double area;
+    private int population;
+    
+    
 }
