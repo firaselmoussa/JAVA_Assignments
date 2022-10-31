@@ -14,10 +14,12 @@ import java.util.Map;
  */
 public class Country {
     
+//    declaring variables
     private String name, countryCode, continent;
     private double area;
     private int population;
     
+//    creating map of continents
     private static final Map<String, String> continents = new HashMap<>();
     static {
         continents.put("africa", "1");
@@ -27,7 +29,7 @@ public class Country {
         continents.put("europe", "5");
     }
     
-    
+//    Country constructor
     public Country( String givenName,
                     String givenContinent,
                     double givenArea,
@@ -44,6 +46,7 @@ public class Country {
 
     }
     
+//    All getter methods 
     public String getName(){
         return name;
     }
@@ -64,7 +67,7 @@ public class Country {
         return population;
     }
  
-    
+//    All setter methods
     public void setArea(double newArea){
         area = newArea;
     }
@@ -73,6 +76,7 @@ public class Country {
         area = newPopulation;
     }
     
+//    To String method
     public String toString(){
         return name + "'s population is " + population + " and its code is " + countryCode;
     }
