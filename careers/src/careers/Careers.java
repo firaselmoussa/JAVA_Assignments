@@ -44,6 +44,17 @@ public class Careers {
             System.out.println(persons[i].toString());
         }
         
+        
+        System.out.println("After adding 100 to the salaries of programmers: ");
+        
+        for(int i = 0; i < Sami.getJobsCount(); i++){
+            if(persons[i].getJob().getJobName() == "Programmer"){
+                persons[i].getJob().setSalary(persons[i].getJob().getSalary()+100);
+                System.out.println(persons[i].toString());
+            }
+        }
+  
+        
     }
     
 }
