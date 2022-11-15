@@ -50,7 +50,6 @@ public class Careers {
         if(persons.length > 0){
             
 
-
             System.out.print("The salaries of each of the persons are: ");
 
             for(int i = 0; i < persons[0].getJobsCount(); i++){
@@ -75,7 +74,7 @@ public class Careers {
             System.out.println("After adding 100 to the salaries of programmers: ");
 
             for(int i = 0; i < persons[0].getJobsCount(); i++){
-                if(persons[i].getJob().getJobName() == "Programmer"){
+                if(persons[i].getJob().getJobName().equalsIgnoreCase("Programmer")){
                     persons[i].getJob().setSalary(persons[i].getJob().getSalary()+100);
                     System.out.println(persons[i].toString());
                 }
@@ -83,6 +82,7 @@ public class Careers {
 
             persons[0].setJob(new Job("Chef", 1500));
 
+            System.out.println("After changing the job of the first person: ");
             System.out.println(persons[0].toString());
 
 
