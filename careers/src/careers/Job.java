@@ -18,4 +18,24 @@ public class Job {
         this.salary = salary;
     }
     
+    public String getJobName(){
+        return jobName;
+    }
+    
+    public double getSalary(){
+        return salary;
+    }
+    
+    public void setJobName(String jobName){
+        this.jobName = jobName;
+    }
+    
+    public void setSalary(double salary){
+        this.salary = salary;
+    }
+    
+    public String toString(){
+        return "job: "+jobName+", salary: "+ salary;
+    }
+    
 }
