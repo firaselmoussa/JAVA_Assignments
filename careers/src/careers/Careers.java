@@ -16,7 +16,7 @@ public class Careers {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Person Sami = new Person("Sami", new Job("test", 456));
+        Person Sami = new Person("Sami", new Job("test", 1000));
         Person Kamal = new Person("Kamal", new Job("Programmer", 2000));
         Person Jamal = new Person("Jamal", new Job("Programmer", 1800));
         Person Tarek = new Person("Tarek", new Job("Teacher", 1900));
@@ -27,10 +27,14 @@ public class Careers {
         System.out.print("The salaries of each of the persons are: ");
         
         for(int i = 0; i < Sami.getJobsCount(); i++){
-            System.out.print(persons[i].getJob().getSalary());
+            System.out.print((int)(persons[i].getJob().getSalary()));
             if(i < Sami.getJobsCount()-1)
                 System.out.print(", ");
+            else
+                System.out.println("");
         }
+        
+        System.out.println("The person with the maximum salary is: "+persons[0].getMaxSalary());
         
     }
     

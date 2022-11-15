@@ -14,6 +14,8 @@ public class Person {
     private Job job;
     private static int jobsCount;
     private static double totalSalary = 0;
+    private static double maxSalary;
+    private static String personWithMaxSalary;
     
     public Person(String n, Job j){
         name = n;
@@ -21,6 +23,12 @@ public class Person {
         
         jobsCount++;
         totalSalary += job.getSalary();
+        
+        if(j.getSalary() > maxSalary){
+            maxSalary = j.getSalary();
+            personWithMaxSalary = n;
+        }
+        
     }
     
     public String getName(){
@@ -49,4 +57,8 @@ public class Person {
         return "Name: "+name+" "+job.toString();
     }
     
+    
+    public String getMaxSalary(){
+        return personWithMaxSalary;
+    }
 }
