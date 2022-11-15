@@ -22,4 +22,29 @@ public class Person {
         jobsCount++;
         totalSalary += job.getSalary();
     }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public int getJobsCount(){
+        return jobsCount;
+    }
+    
+    public double getTotalSalary(){
+        return totalSalary;
+    }
+    
+    public Job getJob(){
+        return job;
+    }
+    
+    public void setJob(Job job){
+        this.job = job;
+    }
+    
+    public String toString(){
+        return "Name: "+name+", job: "+job.toString();
+    }
+    
 }
