@@ -56,7 +56,9 @@ public class Careers {
             }
         }while(!usersInput[0].equalsIgnoreCase("exit"));
         
-        
+        //LINE SPACER
+        System.out.println("\n");
+            
         //CHECKING IF THERE IS NO DATA
         if(persons.length > 0){
 
@@ -76,6 +78,9 @@ public class Careers {
             System.out.println("The total of all salaries is: "+(int)persons[0].getTotalSalary());
             System.out.println("The average of all salaries is: "+(int)(persons[0].getTotalSalary() / persons[0].getJobsCount()));
 
+            //LINE SPACER
+            System.out.println("\n");
+            
             //DISPLAYING DESCRIPTION OF ALL PERSONS
             System.out.println("The description of all the persons: ");
 
@@ -83,6 +88,9 @@ public class Careers {
                 System.out.println(persons[i].toString());
             }
 
+            //LINE SPACER
+            System.out.println("\n");
+            
             //ADDING $100 TO PROGRAMMER'S SALARY & DISPLAYING NEW SALARY
             System.out.println("After adding 100 to the salaries of programmers: ");
 
@@ -92,6 +100,9 @@ public class Careers {
                     System.out.println(persons[i].toString());
                 }
             }
+            
+            //LINE SPACER
+            System.out.println("\n");
             
             //CHANGING FIRST PERSON'S JOB AND DISPLSYING THE NEW DESCRIPTION
             System.out.println("After changing the job of the first person: ");
