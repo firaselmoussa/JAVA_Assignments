@@ -10,6 +10,7 @@ package careers;
  */
 public class Person {
     
+    //DATA FIELDS
     private String name;
     private Job job;
     private static int jobsCount;
@@ -17,6 +18,7 @@ public class Person {
     private static double maxSalary;
     private static String personWithMaxSalary;
     
+    //CONSTRUCTOR
     public Person(String n, Job j){
         name = n;
         job = j;
@@ -31,6 +33,7 @@ public class Person {
         
     }
     
+    //GETTERS METHODS
     public String getName(){
         return name;
     }
@@ -47,18 +50,20 @@ public class Person {
         return job;
     }
     
+    public String getMaxSalary(){
+        return personWithMaxSalary;
+    }
+    
+    //SETTERS METHODS
     public void setJob(Job job){
         totalSalary = (totalSalary - this.job.getSalary()) + job.getSalary();
         
         this.job = job;
     }
     
+    //TO STRING METHOD
     public String toString(){
         return "Name: "+name+", "+job.toString();
     }
     
-    
-    public String getMaxSalary(){
-        return personWithMaxSalary;
-    }
 }
