@@ -13,7 +13,7 @@ public class Person {
     private String name;
     private Job job;
     private static int jobsCount;
-    private static double totalSalary;
+    private static double totalSalary = 0;
     
     public Person(String n, Job j){
         name = n;
@@ -40,11 +40,13 @@ public class Person {
     }
     
     public void setJob(Job job){
+        totalSalary = (totalSalary - this.job.getSalary()) + job.getSalary();
+        
         this.job = job;
     }
     
     public String toString(){
-        return "Name: "+name+", job: "+job.toString();
+        return "Name: "+name+" "+job.toString();
     }
     
 }

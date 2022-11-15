@@ -15,6 +15,23 @@ public class Careers {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Person Sami = new Person("Sami", new Job("test", 456));
+        Person Kamal = new Person("Kamal", new Job("Programmer", 2000));
+        Person Jamal = new Person("Jamal", new Job("Programmer", 1800));
+        Person Tarek = new Person("Tarek", new Job("Teacher", 1900));
+
+            
+        Person persons[] = {Sami, Kamal, Jamal, Tarek};
+        
+        System.out.print("The salaries of each of the persons are: ");
+        
+        for(int i = 0; i < Sami.getJobsCount(); i++){
+            System.out.print(persons[i].getJob().getSalary());
+            if(i < Sami.getJobsCount()-1)
+                System.out.print(", ");
+        }
+        
     }
     
 }
