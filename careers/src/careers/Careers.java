@@ -36,6 +36,8 @@ public class Careers {
         
         System.out.println("The person with the maximum salary is: "+persons[0].getMaxSalary());
         System.out.println("The total of all salaries is: "+(int)persons[0].getTotalSalary());
+        System.out.println("The average of all salaries is: "+(int)(persons[0].getTotalSalary() / persons[0].getJobsCount()));
+        
         
     }
     
