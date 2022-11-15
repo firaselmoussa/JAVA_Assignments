@@ -54,6 +54,10 @@ public class Careers {
             }
         }
   
+        persons[0].setJob(new Job("Chef", 1500));
+        
+        System.out.println(persons[0].toString());
+        
         
     }
     
