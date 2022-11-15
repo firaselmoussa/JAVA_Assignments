@@ -10,4 +10,16 @@ package careers;
  */
 public class Person {
     
+    private String name;
+    private Job job;
+    private static int jobsCount;
+    private static double totalSalary;
+    
+    public Person(String n, Job j){
+        name = n;
+        job = j;
+        
+        jobsCount++;
+        totalSalary += job.getSalary();
+    }
 }
