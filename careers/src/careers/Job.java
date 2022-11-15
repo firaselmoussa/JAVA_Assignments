@@ -10,14 +10,17 @@ package careers;
  */
 public class Job {
     
+    //DATA FIELDS
     private String jobName;
     private double salary;
     
+    //CONSTRUCTOR
     public Job(String jobName, double salary){
         this.jobName = jobName;
         this.salary = salary;
     }
     
+    //GETTERS METHODS
     public String getJobName(){
         return jobName;
     }
@@ -26,6 +29,7 @@ public class Job {
         return salary;
     }
     
+    //SETTERS METHODS
     public void setJobName(String jobName){
         this.jobName = jobName;
     }
@@ -34,6 +38,7 @@ public class Job {
         this.salary = salary;
     }
     
+    //TO STRING METHOD
     public String toString(){
         return "job: "+jobName+", salary: "+ (int)salary;
     }
