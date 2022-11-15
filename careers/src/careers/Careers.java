@@ -16,7 +16,7 @@ public class Careers {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Person Sami = new Person("Sami", new Job("test", 1000));
+        Person Sami = new Person("Sami", new Job("Waiter", 1000));
         Person Kamal = new Person("Kamal", new Job("Programmer", 2100));
         Person Jamal = new Person("Jamal", new Job("Programmer", 1800));
         Person Tarek = new Person("Tarek", new Job("Teacher", 1900));
@@ -38,6 +38,11 @@ public class Careers {
         System.out.println("The total of all salaries is: "+(int)persons[0].getTotalSalary());
         System.out.println("The average of all salaries is: "+(int)(persons[0].getTotalSalary() / persons[0].getJobsCount()));
         
+        System.out.println("The description of all the persons: ");
+        
+        for(int i = 0; i < Sami.getJobsCount(); i++){
+            System.out.println(persons[i].toString());
+        }
         
     }
     

@@ -54,7 +54,7 @@ public class Person {
     }
     
     public String toString(){
-        return "Name: "+name+" "+job.toString();
+        return "Name: "+name+", "+job.toString();
     }
     
     

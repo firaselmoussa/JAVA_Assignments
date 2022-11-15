@@ -35,7 +35,7 @@ public class Job {
     }
     
     public String toString(){
-        return "job: "+jobName+", salary: "+ salary;
+        return "job: "+jobName+", salary: "+ (int)salary;
     }
     
 }
