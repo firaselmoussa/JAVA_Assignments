@@ -10,4 +10,12 @@ package careers;
  */
 public class Job {
     
+    private String jobName;
+    private double salary;
+    
+    public Job(String jobName, double salary){
+        this.jobName = jobName;
+        this.salary = salary;
+    }
+    
 }
