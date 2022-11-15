@@ -23,22 +23,34 @@ public class Careers {
   
         Person[] persons = new Person[0];
 
+        String[] usersInput;
         
         do{
-            System.out.print("Enter the name, job, and salary: ");
-            String[] usersInput = myScanner.nextLine().split(" ");
+            System.out.print("Enter the name, job, and salary('exit' to quit): ");
+            usersInput = myScanner.nextLine().split(" ");
             
-                Person tempPersons[] = new Person[persons.length+1];
-            for(int i =0; i < persons.length; i++){
-                tempPersons[i] = persons[i];
+            if(usersInput.length == 3){ 
+
+                    Person tempPersons[] = new Person[persons.length+1];
+                    for(int i =0; i < persons.length; i++){
+                        tempPersons[i] = persons[i];
+                    }
+                    tempPersons[persons.length] = new Person(usersInput[0], new Job(usersInput[1], Double.parseDouble(usersInput[2])));
+
+                    persons = tempPersons;
+           
+            }else{
+                break;
             }
-            tempPersons[persons.length] = new Person(usersInput[0], new Job(usersInput[1], Double.parseDouble(usersInput[2])));
+
             
-            persons = tempPersons;
-            
-        }while(!myScanner.next().equalsIgnoreCase("exit"));
+        }while(!usersInput[0].equalsIgnoreCase("exit"));
         
         
+        if(persons.length > 0){
+            
+
+
             System.out.print("The salaries of each of the persons are: ");
 
             for(int i = 0; i < persons[0].getJobsCount(); i++){
@@ -76,6 +88,6 @@ public class Careers {
 
         }
         
-    
+    }
     
 }
