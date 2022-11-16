@@ -12,7 +12,7 @@ public class Nurse {
     
     private String name;
     private char timing;
-    private static double basicSalary;
+    private static double basicSalary = 700;
     private int overtime;
     private boolean hasChildren;
     
@@ -45,6 +45,15 @@ public class Nurse {
     
     public void setOverTime(int nbHours){
         overtime = nbHours;
+    }
+    
+    public double totalSalary(){
+        return (hasChildren? (basicSalary + (15*overtime)) : (basicSalary + (15*overtime))+(basicSalary*.1));
+    }
+    
+    public String toString(){
+        String wt = timing == 'D'? "Day": "Night";
+        return "Nurse: "+name+"\nWork Time: "+wt+"\n Salary: "+basicSalary+"\nOvertime: "+overtime+"\nTotal Salary: "+totalSalary();
     }
     
 }
