@@ -30,5 +30,8 @@ public class Workers {
             System.out.println("Name: "+nurses[i].getName()+", total salary: "+nurses[i].totalSalary());
         }
         
+        System.out.println("\nThe third nurse is:\n"+nurses[2].toString()+"\n");
+        
+        System.out.println("The basic salary of all nurses is: "+nurses[0].getBasicSalary());
     }
 }
