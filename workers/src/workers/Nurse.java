@@ -35,4 +35,16 @@ public class Nurse {
         return basicSalary;
     }
     
+    public void setName(String n){
+        name = n;
+    }
+    
+    public void setTiming(char newTiming){
+        timing = newTiming;
+    }
+    
+    public void setOverTime(int nbHours){
+        overtime = nbHours;
+    }
+    
 }
