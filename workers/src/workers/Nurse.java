@@ -10,4 +10,10 @@ package workers;
  */
 public class Nurse {
     
+    private String name;
+    private char timing;
+    private double basicSalary;
+    private int overtime;
+    private boolean hasChildren;
+    
 }
