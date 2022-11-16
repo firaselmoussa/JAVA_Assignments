@@ -53,7 +53,8 @@ public class Nurse {
     
     public String toString(){
         String wt = timing == 'D'? "Day": "Night";
-        return "Nurse: "+name+"\nWork Time: "+wt+"\n Salary: "+basicSalary+"\nOvertime: "+overtime+"\nTotal Salary: "+totalSalary();
+        String ot = overtime > 0? "Overtime: "+overtime : "No Overtime";
+        return "Nurse: "+name+"\nWork Time: "+wt+"\n Salary: "+basicSalary+"\n"+ot+"\nTotal Salary: "+totalSalary();
     }
     
 }
