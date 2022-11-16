@@ -23,6 +23,12 @@ public class Workers {
         for(int i = 0 ; i < nurses.length; i++){
             System.out.println(nurses[i].toString()+"\n");
         }
+        
+        nurses[0].setOverTime(25);
+        
+        for(int i = 0 ; i < nurses.length; i++){
+            System.out.println("Name: "+nurses[i].getName()+", total salary: "+nurses[i].totalSalary());
+        }
+        
     }
-    
 }
