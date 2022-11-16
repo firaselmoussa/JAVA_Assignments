@@ -48,13 +48,13 @@ public class Nurse {
     }
     
     public double totalSalary(){
-        return (hasChildren? (basicSalary + (15*overtime)) : (basicSalary + (15*overtime))+(basicSalary*.1));
+        return (hasChildren? (basicSalary + (15*overtime) + (basicSalary*.1)) : (basicSalary + (15*overtime)));
     }
     
     public String toString(){
         String wt = timing == 'D'? "Day": "Night";
         String ot = overtime > 0? "Overtime: "+overtime : "No Overtime";
-        return "Nurse: "+name+"\nWork Time: "+wt+"\n Salary: "+basicSalary+"\n"+ot+"\nTotal Salary: "+totalSalary();
+        return "Nurse: "+name+"\nWork Time: "+wt+"\nSalary: "+basicSalary+"\n"+ot+"\nTotal Salary: "+totalSalary();
     }
     
 }
