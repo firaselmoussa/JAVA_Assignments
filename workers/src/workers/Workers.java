@@ -6,7 +6,7 @@ package workers;
 
 /**
  *
- * @author yasmin
+ * @author Firas
  */
 public class Workers {
 
@@ -15,6 +15,12 @@ public class Workers {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Nurse nurses[] = {  new Nurse("Heba Mortada", 'D', 0, false),
+                            new Nurse("Ali Mortada", 'N', 0, true),
+                            new Nurse("George Sader", 'D', 10, true)};
+        
+        
     }
     
 }
