@@ -16,4 +16,11 @@ public class Nurse {
     private int overtime;
     private boolean hasChildren;
     
+    public Nurse(String name, char timing, int overtime, boolean hasChild){
+        this.name = name;
+        this.timing = timing;
+        this.overtime = overtime;
+        this.hasChildren = hasChild;
+    }
+    
 }
