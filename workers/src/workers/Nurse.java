@@ -12,7 +12,7 @@ public class Nurse {
     
     private String name;
     private char timing;
-    private double basicSalary;
+    private static double basicSalary;
     private int overtime;
     private boolean hasChildren;
     
@@ -21,6 +21,18 @@ public class Nurse {
         this.timing = timing;
         this.overtime = overtime;
         this.hasChildren = hasChild;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public char getTiming(){
+        return timing;
+    }
+    
+    public double getBasicSalary(){
+        return basicSalary;
     }
     
 }
