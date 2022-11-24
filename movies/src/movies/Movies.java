@@ -35,7 +35,13 @@ public class Movies {
             System.out.println(movie.getActors()[i].toString());
         }
         
-
+        for(int i = 0; i > movie.getActors().length; i++){
+            movie.getActors()[i].setAge(movie.getActors()[i].getAge()+1);
+        }
+        
+        for(int i = 0; i > movie.getActors().length; i++){
+            System.out.println(movie.getActors()[i].toString());
+        }
     }
     
 }
