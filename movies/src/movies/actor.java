@@ -9,5 +9,11 @@ package movies;
  * @author Firas
  */
 public class actor {
+    private String name;
+    private String nationality;
+    private int age;
+    private String gender;
+    private boolean isRetired;
+    
     
 }
