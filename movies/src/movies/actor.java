@@ -63,6 +63,8 @@ public class Actor {
     
     public void setAge(int age){
         this.age= age;
+        if (age >= 70)
+                isRetired = true;
     }
     
     public void setGender(String gender){
