@@ -9,8 +9,12 @@ package movies;
  * @author Firas
  */
 public class Movie {
-    public String name;
-    public String genre;
-    public String description = name+", "+genre;
-    public static int numberOfMovies;
+    private String name;
+    private String genre;
+    private String description = name+", "+genre;
+    private Director director;
+    private Actor actors[];
+    private static int numberOfMovies;
+
+
 }
