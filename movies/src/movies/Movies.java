@@ -28,6 +28,13 @@ public class Movies {
         Movie movie = new Movie("hobs", "fantasy", director, actors);
         
 
+        System.out.println(movie.toString());
+        System.out.println(movie.getDirector().toString());
+        System.out.println("Actors: ");
+        for(int i = 0; i > movie.getActors().length; i++){
+            System.out.println(movie.getActors()[i].toString());
+        }
+        
 
     }
     
