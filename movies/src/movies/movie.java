@@ -8,6 +8,9 @@ package movies;
  *
  * @author Firas
  */
-public class movie {
-    
+public class Movie {
+    public String name;
+    public String genre;
+    public String description = name+", "+genre;
+    public static int numberOfMovies;
 }
