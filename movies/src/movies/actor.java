@@ -24,4 +24,28 @@ public class Actor {
         this.isRetired = isRetired;
         this.isMainCharacter = isMainCharacter;
     }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getNationality(){
+        return nationality;
+    }
+    
+    public int getAge(){
+        return age;
+    }
+    
+    public String getGender(){
+        return gender;
+    }
+    
+    public boolean isRetired(){
+        return isRetired;
+    }
+    
+    public boolean isMainCharacter(){
+        return isMainCharacter;
+    }
 }
