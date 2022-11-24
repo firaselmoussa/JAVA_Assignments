@@ -9,12 +9,14 @@ package movies;
  * @author Firas
  */
 public class Director {
+    //DATA FIELDS
     private String name;
     private String nationality;
     private int age;
     private String gender;
     private boolean isRetired;
     
+    //CONSTRUCTOR
     public Director(String name, String nationality, int age, String gender, boolean isRetired){
         this.name = name;
         this.nationality = nationality;
@@ -23,6 +25,7 @@ public class Director {
         this.isRetired = isRetired;
     }
     
+    //GETTER METHODS
     public String getName(){
         return name;
     }
@@ -43,7 +46,7 @@ public class Director {
         return isRetired;
     }
     
-    
+    //SETTER METHODS
     public void setName(String name){
         this.name = name;
     }
@@ -64,6 +67,7 @@ public class Director {
         this.isRetired = isRetired;
     }
     
+    //DESCRIPTION
     public String toString(){
         return "Director: "+name+"\nNationality: "+nationality+"\nAge: "+age+"\nGender: "+gender+"\nRetired: "+isRetired;
     }
