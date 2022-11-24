@@ -74,4 +74,7 @@ public class Actor {
         this.isMainCharacter = isMainCharacter;
     }
     
+    public String toString(){
+        return "Ator: "+name+"\nNationality: "+nationality+"\nAge: "+age+"\nGender: "+gender+"\nRetired: "+isRetired+"\nMain Character: "+isMainCharacter;
+    }
 }
