@@ -22,4 +22,24 @@ public class Director {
         this.gender = gender;
         this.isRetired = isRetired;
     }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getNationality(){
+        return nationality;
+    }
+    
+    public int getAge(){
+        return age;
+    }
+    
+    public String getGender(){
+        return gender;
+    }
+    
+    public boolean isRetired(){
+        return isRetired;
+    }
 }
