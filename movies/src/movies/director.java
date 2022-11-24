@@ -15,5 +15,11 @@ public class Director {
     private String gender;
     private boolean isRetired;
     
-
+    public Director(String name, String nationality, int age, String gender, boolean isRetired){
+        this.name = name;
+        this.nationality = nationality;
+        this.age = age;
+        this.gender = gender;
+        this.isRetired = isRetired;
+    }
 }
