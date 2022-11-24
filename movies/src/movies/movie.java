@@ -23,4 +23,12 @@ public class Movie {
         this.actors = actors;
         description = name+", "+genre;
     }
+    
+    public Movie(String description, Director director, Actor actors[]){
+        this.description = description;
+        this.director = director;
+        this.actors = actors;
+        name = description.split(" ")[0];
+        name = description.split(" ")[-1];
+    }
 }
