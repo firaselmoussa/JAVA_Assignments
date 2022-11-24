@@ -6,8 +6,14 @@ package movies;
 
 /**
  *
- * @author yasmin
+ * @author Firas
  */
-public class director {
+public class Director {
+    private String name;
+    private String nationality;
+    private int age;
+    private String gender;
+    private boolean isRetired;
     
+
 }

@@ -6,7 +6,7 @@ package movies;
 
 /**
  *
- * @author yasmin
+ * @author Firas
  */
 public class movie {
     
