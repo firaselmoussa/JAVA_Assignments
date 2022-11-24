@@ -57,4 +57,28 @@ public class Movie {
     public int getNumberOfMovies(){
         return numberOfMovies;
     }
+    
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public void setGenre(String genre){
+        this.genre = genre;
+    }
+    
+    public void setDescription(String description){
+        this.description = description;
+        setName(description.split(" ")[0]);
+        setGenre(description.split(" ")[-1]);
+    }
+    
+    public void setDirector(Director director){
+        this.director = director;
+    }
+    
+    public void setActors(Actor actors[]){
+        this.actors = actors;
+    }
+    
 }
