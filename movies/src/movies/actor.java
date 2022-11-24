@@ -9,6 +9,7 @@ package movies;
  * @author Firas
  */
 public class Actor {
+    //DATA FIELDS
     private String name;
     private String nationality;
     private int age;
@@ -16,6 +17,7 @@ public class Actor {
     private boolean isRetired;
     private boolean isMainCharacter;
     
+    //CONSTRUCTOR
     public Actor(String name, String nationality, int age, String gender, boolean isRetired, boolean isMainCharacter){
         this.name = name;
         this.nationality = nationality;
@@ -25,6 +27,7 @@ public class Actor {
         this.isMainCharacter = isMainCharacter;
     }
     
+    //GETTER METHODS
     public String getName(){
         return name;
     }
@@ -49,7 +52,7 @@ public class Actor {
         return isMainCharacter;
     }
     
-    
+    //SETTER METHODS
     public void setName(String name){
         this.name = name;
     }
@@ -74,6 +77,7 @@ public class Actor {
         this.isMainCharacter = isMainCharacter;
     }
     
+    //DESCRIPTION
     public String toString(){
         return "Ator: "+name+"\nNationality: "+nationality+"\nAge: "+age+"\nGender: "+gender+"\nRetired: "+isRetired+"\nMain Character: "+isMainCharacter;
     }
