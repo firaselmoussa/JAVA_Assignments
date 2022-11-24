@@ -33,4 +33,28 @@ public class Movie {
         name = description.split(" ")[-1];
         numberOfMovies++;
     }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getGenre(){
+        return genre;
+    }
+    
+    public String getDescription(){
+        return description;
+    }
+    
+    public Director getDirector(){
+        return director;
+    }
+    
+    public Actor[] getActors(){
+        return actors;
+    }
+    
+    public int getNumberOfMovies(){
+        return numberOfMovies;
+    }
 }
