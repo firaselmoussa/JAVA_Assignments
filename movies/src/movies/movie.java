@@ -81,4 +81,8 @@ public class Movie {
         this.actors = actors;
     }
     
+    public String toString(){
+         return "Ator: "+name+"\nGenre: "+genre+"\nDirector: "+director+"\nActors: "+actors.length;
+    }
+    
 }
