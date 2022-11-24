@@ -35,6 +35,7 @@ public class Movies {
             System.out.println(movie.getActors()[i].toString());
         }
         
+        movie.getDirector().setAge(movie.getDirector().getAge()+1);
         for(int i = 0; i > movie.getActors().length; i++){
             movie.getActors()[i].setAge(movie.getActors()[i].getAge()+1);
         }
@@ -42,6 +43,9 @@ public class Movies {
         for(int i = 0; i > movie.getActors().length; i++){
             System.out.println(movie.getActors()[i].toString());
         }
+        
+        movie.setDirector(new Director("Alan", "British", 42, "Male", false));
+        System.out.println(movie.getDirector().toString());
     }
     
 }
