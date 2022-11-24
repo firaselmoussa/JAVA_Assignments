@@ -48,4 +48,30 @@ public class Actor {
     public boolean isMainCharacter(){
         return isMainCharacter;
     }
+    
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public void setNationality(String nationality){
+        this.nationality = nationality;
+    }
+    
+    public void setAge(int age){
+        this.age= age;
+    }
+    
+    public void setGender(String gender){
+        this.gender = gender;
+    }
+    
+    public void setisRetired(boolean isRetired){
+        this.isRetired = isRetired;
+    }
+    
+    public void setisMainCharacter(boolean isMainCharacter){
+        this.isMainCharacter = isMainCharacter;
+    }
+    
 }
