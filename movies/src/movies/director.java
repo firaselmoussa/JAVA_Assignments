@@ -63,4 +63,8 @@ public class Director {
     public void setisRetired(boolean isRetired){
         this.isRetired = isRetired;
     }
+    
+    public String toString(){
+        return "Director: "+name+"\nNationality: "+nationality+"\nAge: "+age+"\nGender: "+gender+"\nRetired: "+isRetired;
+    }
 }
