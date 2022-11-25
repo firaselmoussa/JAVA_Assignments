@@ -13,4 +13,9 @@ public class Vaccine {
     private String expiryDate;
     private int dose;
     
+    public Vaccine(String name, String expiryDate, int dose){
+        this.name = name;
+        this.expiryDate = expiryDate;
+        this.dose = dose;
+    }
 }
