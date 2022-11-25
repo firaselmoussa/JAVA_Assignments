@@ -21,4 +21,16 @@ public class Patient {
             this.id = id;
         this.vaccine = vaccine;
     }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public int getId(){
+        return id;
+    }
+    
+    public Vaccine getVaccine(){
+        return vaccine;
+    }
 }
