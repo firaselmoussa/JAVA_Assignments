@@ -57,9 +57,20 @@ public class Hospital {
                              new Patient("Bob", 8759, cov_19, false),
                              new Patient("Bob", 8759, cov_19, false)};
         
+        int patientsIds[] = new int[patients.length];
+        for(int i= 0; i < patients.length; i++){
+            patientsIds[i] = patients[i].getId();
+        }
         
-        
-     
+        System.out.println(searchById(patientsIds, patients.length, 9));
+
     }
+    
+    
+    static int searchById(int arr[], int n, int x){
+        
+    }
+    
+    
     
 }
