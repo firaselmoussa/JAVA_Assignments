@@ -9,5 +9,9 @@ package hospital;
  * @author Firas
  */
 public class Doctor {
-    
+    private String name;
+    private int id;
+    private Vaccine vaccine;
+    private boolean isVaccined;
+    private static int numberOfDoctors;
 }
