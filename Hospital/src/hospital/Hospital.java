@@ -68,7 +68,29 @@ public class Hospital {
     
     
     static int searchById(int arr[], int n, int x){
+        // 1st comparison
+        if (arr[n - 1] == x)
+            return n-1;
         
+        //backup var
+        int backup = arr[n - 1];
+        arr[n - 1] = x;
+ 
+        //no termination condition => no comparison
+        for (int i = 0;; i++) {
+            
+            // this would be executed at-most n comparisons
+            if (arr[i] == x) {
+                arr[n - 1] = backup;
+ 
+                // final comparison
+                if (i < n - 1)
+                    return i;
+ 
+                // else not present in the array
+                return -1;
+            }
+        }
     }
     
     
