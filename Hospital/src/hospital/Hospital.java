@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package hospital;
+import java.util.Calendar;
 
 /**
  *
@@ -16,13 +17,26 @@ public class Hospital {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        //CREATING TEST OBJECTS
         Vaccine cov_19 = new Vaccine("cov-19", "01/01/2032", 90);
         
         Patient sick_bob = new Patient("Bob", 8759, cov_19, false);
         
         Doctor Dr_Jean = new Doctor("Jean", 224, cov_19, true);
 
+        System.out.println(cov_19.toString()+"\n"+sick_bob.toString()+"\n"+Dr_Jean.toString());
+       
 
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
+        int ExpireIn = Integer.parseInt(cov_19.extractYear()) - currentYear;
+        System.out.println("vaccine expires in :"+ExpireIn);
+
+        //APPLYING METHODS
+        System.out.println("Dr.Jean will give Sick Bob his vaccine..");
+        Dr_Jean.giveVaccine(sick_bob);
+        System.out.println(sick_bob.toString());
+        
+        
      
     }
     

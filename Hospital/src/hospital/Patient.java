@@ -59,6 +59,7 @@ public class Patient {
     }
     
     public void setIsVaccinated(boolean isVaccinated){
+        System.out.println(name+": Ouch!");
         this.isVaccinated = isVaccinated;
     }
     
