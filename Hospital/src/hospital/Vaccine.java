@@ -9,16 +9,20 @@ package hospital;
  * @author Firas
  */
 public class Vaccine {
+    
+    //DATA FIELDS
     private String name;
     private String expiryDate;
     private int dose;
     
+    //CONSTRUCTOR
     public Vaccine(String name, String expiryDate, int dose){
         this.name = name;
         this.expiryDate = expiryDate;
         this.dose = dose;
     }
     
+    //GETTERS
     public String getName(){
         return name;
     }
@@ -31,7 +35,7 @@ public class Vaccine {
         return dose;
     }
     
-    
+    //SETTERS
     public void setName(String name){
         this.name = name;
     }
@@ -44,10 +48,12 @@ public class Vaccine {
         this.dose =  dose;
     }
     
+    //EXTRACT EXPIRY YEAR
     public String extractYear(){
         return expiryDate.substring(-4, -1);
     }
     
+    //TOSTRING METHOD
     public String toString(){
         return "Name: "+name+", Dose: "+dose+", Expire at: "+expiryDate;
     }
