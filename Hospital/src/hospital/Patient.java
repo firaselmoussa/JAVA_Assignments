@@ -41,6 +41,10 @@ public class Patient {
         return vaccine;
     }
     
+    public boolean getIsVaccinated(){
+        return isVaccinated;
+    }
+    
     //SETTERS
     public void setName(String name){
         this.name = name;
