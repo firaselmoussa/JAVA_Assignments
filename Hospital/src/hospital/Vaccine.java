@@ -31,4 +31,18 @@ public class Vaccine {
         return dose;
     }
     
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public void setExpiryDate(String expiryDate){
+        this.expiryDate = expiryDate;
+    }
+    
+    public void setDose(int dose){
+        this.dose =  dose;
+    }
+    
+    
 }
