@@ -37,6 +37,28 @@ public class Hospital {
         System.out.println(sick_bob.toString());
         
         
+        //ARRA OF PATIENTS
+        Patient patients[] ={new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Unique", 0, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false),
+                             new Patient("Bob", 8759, cov_19, false)};
+        
+        
+        
      
     }
     
