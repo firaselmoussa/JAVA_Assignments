@@ -14,4 +14,16 @@ public class Doctor {
     private Vaccine vaccine;
     private boolean isVaccined;
     private static int numberOfDoctors;
+    
+    public Doctor(String name, int id, Vaccine vaccine, boolean isVaccined){
+        this.name = name;
+        if(id < 0)
+            this.id = id*(-1);
+        else
+            this.id = id;
+        this.vaccine = vaccine;
+        this.isVaccined = isVaccined;
+        numberOfDoctors++;
+    }
+    
 }
