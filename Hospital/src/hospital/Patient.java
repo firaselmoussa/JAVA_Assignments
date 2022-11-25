@@ -12,14 +12,16 @@ public class Patient {
     private String name;
     private int id;
     private Vaccine vaccine;
+    private boolean isVaccined;
     
-    public Patient(String name, int id, Vaccine vaccine){
+    public Patient(String name, int id, Vaccine vaccine, boolean isVaccined){
         this.name = name;
         if(id < 0)
             this.id = id*(-1);
         else
             this.id = id;
         this.vaccine = vaccine;
+        this.isVaccined = isVaccined;
     }
     
     public String getName(){
@@ -48,6 +50,6 @@ public class Patient {
     }
     
     public String toString(){
-        return "Name: "+name+", Id: "+id+", Vaccine: {"+vaccine.toString()+"}";
+        return "Name: "+name+", Id: "+id+", Vaccine: {"+vaccine.toString()+"} , Is Vaccined: "+isVaccined;
     }
 }
