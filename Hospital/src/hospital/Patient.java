@@ -13,6 +13,7 @@ public class Patient {
     private int id;
     private Vaccine vaccine;
     private boolean isVaccined;
+    private static int numberOfPatients;
     
     public Patient(String name, int id, Vaccine vaccine, boolean isVaccined){
         this.name = name;
@@ -22,6 +23,7 @@ public class Patient {
             this.id = id;
         this.vaccine = vaccine;
         this.isVaccined = isVaccined;
+        numberOfPatients++;
     }
     
     public String getName(){
