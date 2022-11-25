@@ -44,5 +44,12 @@ public class Vaccine {
         this.dose =  dose;
     }
     
+    public String extractYear(){
+        return expiryDate.substring(-4, -1);
+    }
+    
+    public String toString(){
+        return "Name: "+name+", Dose: "+dose+", Expire at: "+expiryDate;
+    }
     
 }
