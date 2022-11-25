@@ -46,4 +46,8 @@ public class Patient {
     public void setVaccine(Vaccine vaccine){
         this.vaccine = vaccine;
     }
+    
+    public String toString(){
+        return "Name: "+name+", Id: "+id+", Vaccine: {"+vaccine.toString()+"}";
+    }
 }
