@@ -13,4 +13,12 @@ public class Patient {
     private int id;
     private Vaccine vaccine;
     
+    public Patient(String name, int id, Vaccine vaccine){
+        this.name = name;
+        if(id < 0)
+            this.id = id*(-1);
+        else
+            this.id = id;
+        this.vaccine = vaccine;
+    }
 }
