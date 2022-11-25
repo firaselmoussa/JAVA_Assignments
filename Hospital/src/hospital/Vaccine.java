@@ -9,5 +9,8 @@ package hospital;
  * @author Firas
  */
 public class Vaccine {
+    private String name;
+    private String expiryDate;
+    private int dose;
     
 }
