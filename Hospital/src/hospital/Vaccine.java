@@ -50,7 +50,7 @@ public class Vaccine {
     
     //EXTRACT EXPIRY YEAR
     public String extractYear(){
-        return expiryDate.substring(-4, -1);
+        return expiryDate.substring(expiryDate.length()-4);
     }
     
     //TOSTRING METHOD
