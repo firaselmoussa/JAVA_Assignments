@@ -18,4 +18,17 @@ public class Vaccine {
         this.expiryDate = expiryDate;
         this.dose = dose;
     }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getExpiryDate(){
+        return expiryDate;
+    }
+    
+    public int getDose(){
+        return dose;
+    }
+    
 }
