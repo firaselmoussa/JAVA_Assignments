@@ -33,4 +33,17 @@ public class Patient {
     public Vaccine getVaccine(){
         return vaccine;
     }
+    
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public void setId(int id){
+        this.id = id;
+    }
+    
+    public void setVaccine(Vaccine vaccine){
+        this.vaccine = vaccine;
+    }
 }
