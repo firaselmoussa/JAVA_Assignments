@@ -9,12 +9,14 @@ package hospital;
  * @author Firas
  */
 public class Patient {
+    //DATA FIELDS
     private String name;
     private int id;
     private Vaccine vaccine;
     private boolean isVaccinated;
     private static int numberOfPatients;
     
+    //CONSTRUCTOR
     public Patient(String name, int id, Vaccine vaccine, boolean isVaccinated){
         this.name = name;
         if(id < 0)
@@ -26,6 +28,7 @@ public class Patient {
         numberOfPatients++;
     }
     
+    //GETTERS
     public String getName(){
         return name;
     }
@@ -38,7 +41,7 @@ public class Patient {
         return vaccine;
     }
     
-    
+    //SETTERS
     public void setName(String name){
         this.name = name;
     }
@@ -55,6 +58,7 @@ public class Patient {
         this.isVaccinated = isVaccinated;
     }
     
+    //TOSTRING
     public String toString(){
         return "Name: "+name+", Id: "+id+", Vaccine: {"+vaccine.toString()+"} , Is Vaccined: "+isVaccinated;
     }
