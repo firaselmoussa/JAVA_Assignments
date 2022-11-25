@@ -12,17 +12,17 @@ public class Patient {
     private String name;
     private int id;
     private Vaccine vaccine;
-    private boolean isVaccined;
+    private boolean isVaccinated;
     private static int numberOfPatients;
     
-    public Patient(String name, int id, Vaccine vaccine, boolean isVaccined){
+    public Patient(String name, int id, Vaccine vaccine, boolean isVaccinated){
         this.name = name;
         if(id < 0)
             this.id = id*(-1);
         else
             this.id = id;
         this.vaccine = vaccine;
-        this.isVaccined = isVaccined;
+        this.isVaccinated = isVaccinated;
         numberOfPatients++;
     }
     
@@ -51,7 +51,11 @@ public class Patient {
         this.vaccine = vaccine;
     }
     
+    public void setIsVaccinated(boolean isVaccinated){
+        this.isVaccinated = isVaccinated;
+    }
+    
     public String toString(){
-        return "Name: "+name+", Id: "+id+", Vaccine: {"+vaccine.toString()+"} , Is Vaccined: "+isVaccined;
+        return "Name: "+name+", Id: "+id+", Vaccine: {"+vaccine.toString()+"} , Is Vaccined: "+isVaccinated;
     }
 }
