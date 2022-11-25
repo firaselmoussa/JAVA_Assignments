@@ -57,4 +57,12 @@ public class Doctor {
     public void setIsVaccinated(boolean isVaccinated){
         this.isVaccinated = isVaccinated;
     }
+    
+    public void giveVaccine(Patient patient){
+        patient.setIsVaccinated(true);
+    }
+    
+    public String toString(){
+        return "Name: "+name+", Id: "+id+", Vaccine: {"+vaccine.toString()+"} , Is Vaccined: "+isVaccinated;
+    }
 }
