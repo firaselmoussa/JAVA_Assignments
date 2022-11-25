@@ -9,5 +9,8 @@ package hospital;
  * @author Firas
  */
 public class Patient {
+    private String name;
+    private int id;
+    private Vaccine vaccine;
     
 }
