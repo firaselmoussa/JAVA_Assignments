@@ -62,7 +62,14 @@ public class Hospital {
             patientsIds[i] = patients[i].getId();
         }
         
-        System.out.println(searchById(patientsIds, patients.length, 9));
+        int id = 0;
+        int indexOfId = searchById(patientsIds, patients.length, id);
+        
+        if(indexOfId == -1)
+            System.out.println("No user with such Id.");
+        else
+            System.out.println(patients[indexOfId].toString());
+        
 
     }
     
