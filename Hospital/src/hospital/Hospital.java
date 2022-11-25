@@ -57,11 +57,15 @@ public class Hospital {
                              new Patient("Bob", 8759, cov_19, false),
                              new Patient("Bob", 8759, cov_19, false)};
         
+        //ARRAY OF ID's THE SIZE OF PATIENTS ARRAY
         int patientsIds[] = new int[patients.length];
+        
+        //POPULATING THE ARRAY
         for(int i= 0; i < patients.length; i++){
             patientsIds[i] = patients[i].getId();
         }
         
+        //RUN TEST
         int id = 0;
         int indexOfId = searchById(patientsIds, patients.length, id);
         
