@@ -38,7 +38,23 @@ public class Doctor {
         return vaccine;
     }
     
-    public boolean getisIsVaccined(){
+    public boolean getisIsVaccinated(){
         return isVaccinated;
+    }
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public void setId(int id){
+        this.id = id;
+    }
+    
+    public void setVaccine(Vaccine vaccine){
+        this.vaccine = vaccine;
+    }
+    
+    public void setIsVaccinated(boolean isVaccinated){
+        this.isVaccinated = isVaccinated;
     }
 }
