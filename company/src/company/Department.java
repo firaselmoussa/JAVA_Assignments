@@ -6,8 +6,10 @@ package company;
 
 /**
  *
- * @author yasmin
+ * @author Firas
  */
 public class Department {
+    String name;
+    int id;
     
 }
