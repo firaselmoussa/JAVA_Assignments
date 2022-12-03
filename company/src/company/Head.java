@@ -18,5 +18,9 @@ public class Head extends Employee{
         this.jobType = jobType;
     }
     
+    public String toString(){
+        return "Name:"+firstName+" "+lastName+"\nId: "+id+"\nJob Type: "+jobType;
+    }
+    
     
 }
