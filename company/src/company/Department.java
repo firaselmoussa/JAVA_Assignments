@@ -26,4 +26,8 @@ public class Department {
         return headEmployee;
     }
     
+    public String toString(){
+        return "Name: "+name+"\nHead: {\n"+headEmployee.toString()+"\n}";
+    }
+    
 }
