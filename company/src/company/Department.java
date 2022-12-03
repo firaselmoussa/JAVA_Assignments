@@ -10,10 +10,20 @@ package company;
  */
 public class Department {
     String name, id;
+    Head headEmployee;
     
-    public Department(String name){
+    public Department(String name, Head headEmployee){
         this.name = name;
+        this.headEmployee = headEmployee;
         id = name.substring(0, 3).toUpperCase();
+    }
+    
+    public void setHead(Head headEmployee){
+        this.headEmployee = headEmployee;
+    }
+    
+    public Head getHead(){
+        return headEmployee;
     }
     
 }
