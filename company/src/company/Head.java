@@ -9,5 +9,10 @@ package company;
  * @author Firas
  */
 public class Head {
+    String firstName, lastName;
+    int age, jobType; // job type = 0 or 1
+    
+    
+    
     
 }
