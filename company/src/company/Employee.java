@@ -19,4 +19,8 @@ public class Employee {
         
         id = firstName.charAt(0)+lastName.charAt(0)+'#'+age;
     }
+    
+    public String toString(){
+        return "Name:"+firstName+" "+lastName+"\nId: "+id;
+    }
 }
