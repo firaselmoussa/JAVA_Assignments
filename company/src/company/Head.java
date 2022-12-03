@@ -8,11 +8,15 @@ package company;
  *
  * @author Firas
  */
-public class Head {
-    String firstName, lastName;
-    int age, jobType; // job type = 0 or 1
+public class Head extends Employee{
+    int jobType; //0 = Administrative && 1 = Technical
     
-    
+    public Head(String firstName, String lastName, int jobType){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.jobType = jobType;
+    }
     
     
 }
