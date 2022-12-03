@@ -9,7 +9,11 @@ package company;
  * @author Firas
  */
 public class Department {
-    String name;
-    int id;
+    String name, id;
+    
+    public Department(String name){
+        this.name = name;
+        id = name.substring(0, 3).toUpperCase();
+    }
     
 }
