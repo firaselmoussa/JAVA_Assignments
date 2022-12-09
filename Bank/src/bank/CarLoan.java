@@ -11,5 +11,13 @@ package bank;
 public class CarLoan extends Loan{
     private String carType;
     private double insuranceFee;
+
+    public CarLoan(String carType, double insuranceFee, String customerName, double loanAmount, double interrest, int nbYears) {
+        super(customerName, loanAmount, interrest, nbYears);
+        this.carType = carType;
+        this.insuranceFee = insuranceFee;
+    }
+    
+    
     
 }
