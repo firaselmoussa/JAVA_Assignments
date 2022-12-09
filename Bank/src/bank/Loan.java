@@ -36,6 +36,22 @@ public class Loan {
     public int getNbYears() {
         return nbYears;
     }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public void setLoanAmount(double loanAmount) {
+        this.loanAmount = loanAmount;
+    }
+
+    public void setInterrest(double interrest) {
+        this.interrest = interrest;
+    }
+
+    public void setNbYears(int nbYears) {
+        this.nbYears = nbYears;
+    }
     
     
     
