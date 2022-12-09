@@ -9,15 +9,21 @@ package bank;
  * @author Firas
  */
 public class CarLoan extends Loan{
+    
+    //DATA FIELDS
     private String carType;
     private double insuranceFee;
 
+    
+    //CONSTRUCTOR
     public CarLoan(String carType, double insuranceFee, String customerName, double loanAmount, double interrest, int nbYears) {
         super(customerName, loanAmount, interrest, nbYears);
         this.carType = carType;
         this.insuranceFee = insuranceFee;
     }
 
+    
+    //GETTERS
     public String getCarType() {
         return carType;
     }
@@ -26,6 +32,8 @@ public class CarLoan extends Loan{
         return insuranceFee;
     }
 
+    
+    //SETTERS
     public void setCarType(String carType) {
         this.carType = carType;
     }
@@ -35,10 +43,13 @@ public class CarLoan extends Loan{
     }
     
     
+    //FINAL AMOUNT METHOD: CALCULATES FINAL AMOUNT AFTER TAXATION
     public double finalAmount(double tax){
         return ((super.getLoanAmount()*Math.pow(1+super.getInterrest(), super.getNbYears())) + ((super.getLoanAmount()*Math.pow(1+super.getInterrest(), super.getNbYears()))*tax));
     }
 
+    
+    //TOSTRING METHOD
     @Override
     public String toString() {
         return "CarLoan{" + "carType=" + carType + ", insuranceFee=" + insuranceFee + '}';
