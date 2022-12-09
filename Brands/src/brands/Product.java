@@ -15,4 +15,14 @@ public class Product {
     private double price;
     private static int numberOfProducts = 0;
     
+    
+    public Product(String name, String type, Brand brand){
+        this.name = name;
+        this.type = type;
+        this.brand = brand;
+        numberOfProducts++;
+        
+        brand.setNumberOfProducts(brand.getNumberOfProducts()+1);
+    }
+    
 }
