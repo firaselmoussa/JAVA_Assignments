@@ -13,12 +13,33 @@ public class Loan {
     String customerName;
     double loanAmount, interrest;
     int nbYears;
-    
-    public Loan(String customername, double loanAmount, double interrest, int nbyears){
-        this.customerName = customername;
-        this.interrest = interrest;
+
+    public Loan(String customerName, double loanAmount, double interrest, int nbYears) {
+        this.customerName = customerName;
         this.loanAmount = loanAmount;
-        this.nbYears = nbyears;
+        this.interrest = interrest;
+        this.nbYears = nbYears;
     }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public double getLoanAmount() {
+        return loanAmount;
+    }
+
+    public double getInterrest() {
+        return interrest;
+    }
+
+    public int getNbYears() {
+        return nbYears;
+    }
+    
+    
+    
+    
+    
     
 }
