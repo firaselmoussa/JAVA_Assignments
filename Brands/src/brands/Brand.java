@@ -10,4 +10,7 @@ package brands;
  */
 public class Brand {
     
+    private String Title, HeadQuarters;
+    private int numberOfProducts = 0;
+    
 }
