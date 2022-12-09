@@ -10,4 +10,9 @@ package brands;
  */
 public class Product {
     
+    private String name, type, Quality;
+    private Brand brand;
+    private double price;
+    private static int numberOfProducts = 0;
+    
 }
