@@ -9,5 +9,7 @@ package bank;
  * @author Firas
  */
 public class CarLoan extends Loan{
+    private String carType;
+    private double insuranceFee;
     
 }
