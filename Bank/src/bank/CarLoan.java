@@ -38,6 +38,11 @@ public class CarLoan extends Loan{
     public double finalAmount(double tax){
         return ((super.getLoanAmount()*Math.pow(1+super.getInterrest(), super.getNbYears())) + ((super.getLoanAmount()*Math.pow(1+super.getInterrest(), super.getNbYears()))*tax));
     }
+
+    @Override
+    public String toString() {
+        return "CarLoan{" + "carType=" + carType + ", insuranceFee=" + insuranceFee + '}';
+    }
     
     
 }
