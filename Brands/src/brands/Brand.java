@@ -13,4 +13,11 @@ public class Brand {
     private String Title, HeadQuarters;
     private int numberOfProducts = 0;
     
+    
+    public Brand(String name, String HeadQuarters){
+        Title = name;
+        this.HeadQuarters = HeadQuarters;
+    }
+    
+    
 }
