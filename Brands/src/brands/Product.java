@@ -24,5 +24,29 @@ public class Product {
         
         brand.setNumberOfProducts(brand.getNumberOfProducts()+1);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getQuality() {
+        return Quality;
+    }
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public static int getNumberOfProducts() {
+        return numberOfProducts;
+    }
     
 }
