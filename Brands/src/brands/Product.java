@@ -75,4 +75,9 @@ public class Product {
     
     
     
+    public String toString(){
+        return brand.toString()+"\nThe product "+name+" is "+Quality+" "+type+", its price is "+(int)price+"$";
+    }
+    
+    
 }
