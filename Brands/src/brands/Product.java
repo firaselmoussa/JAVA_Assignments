@@ -48,5 +48,31 @@ public class Product {
     public static int getNumberOfProducts() {
         return numberOfProducts;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setQuality(String Quality) {
+        this.Quality = Quality;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public static void setNumberOfProducts(int numberOfProducts) {
+        Product.numberOfProducts = numberOfProducts;
+    }
+    
+    
     
 }
