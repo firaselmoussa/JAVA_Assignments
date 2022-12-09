@@ -26,6 +26,16 @@ public class HomeLoan extends Loan{
     public int getNbOfRooms() {
         return nbOfRooms;
     }
+
+    public void setHomeAddress(String homeAddress) {
+        this.homeAddress = homeAddress;
+    }
+
+    public void setNbOfRooms(int nbOfRooms) {
+        this.nbOfRooms = nbOfRooms;
+    }
+    
+    
     
     
     
