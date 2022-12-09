@@ -13,4 +13,10 @@ public class HomeLoan extends Loan{
     private String homeAddress;
     private int nbOfRooms;
     
+    public HomeLoan(String homeAddress, int nbOfRooms, String customerName, double loanAmount, double interrest, int nbYears){
+        super(customerName, loanAmount, interrest, nbYears);
+        this.homeAddress = homeAddress;
+        this.nbOfRooms = nbOfRooms;
+    }
+    
 }
