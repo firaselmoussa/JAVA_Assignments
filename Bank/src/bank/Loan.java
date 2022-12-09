@@ -10,9 +10,9 @@ package bank;
  */
 public class Loan {
     
-    String customerName;
-    double loanAmount, interrest;
-    int nbYears;
+    private String customerName;
+    private double loanAmount, interrest;
+    private int nbYears;
 
     public Loan(String customerName, double loanAmount, double interrest, int nbYears) {
         this.customerName = customerName;
