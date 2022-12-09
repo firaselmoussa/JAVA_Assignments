@@ -10,4 +10,8 @@ package bank;
  */
 public class Loan {
     
+    String customerName;
+    double loanAmount, interrest;
+    int nbYears;
+    
 }
