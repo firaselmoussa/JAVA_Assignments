@@ -10,4 +10,7 @@ package bank;
  */
 public class HomeLoan extends Loan{
     
+    private String homeAddress;
+    private int nbOfRooms;
+    
 }
