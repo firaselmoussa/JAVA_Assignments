@@ -19,7 +19,13 @@ public class Loan {
     //CONSTRUCTOR
     public Loan(String customerName, double loanAmount, double interrest, int nbYears) {
         this.customerName = customerName;
-        this.loanAmount = loanAmount;
+        //limiting the interest rate
+        if(loanAmount < 8)
+            this.loanAmount = 8;
+        if(loanAmount < 5)
+            this.loanAmount = 5;
+        else
+            this.loanAmount = loanAmount;
         this.interrest = interrest;
         this.nbYears = nbYears;
     }
