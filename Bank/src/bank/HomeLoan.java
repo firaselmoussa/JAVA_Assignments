@@ -18,5 +18,15 @@ public class HomeLoan extends Loan{
         this.homeAddress = homeAddress;
         this.nbOfRooms = nbOfRooms;
     }
+
+    public String getHomeAddress() {
+        return homeAddress;
+    }
+
+    public int getNbOfRooms() {
+        return nbOfRooms;
+    }
+    
+    
     
 }
