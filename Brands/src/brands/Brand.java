@@ -46,4 +46,7 @@ public class Brand {
     }
     
     
+    public String toString(){
+        return "Btrand: "+Title+", "+HeadQuarters+", "+numberOfProducts+" products";
+    }
 }
