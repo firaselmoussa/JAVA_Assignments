@@ -20,4 +20,17 @@ public class Brand {
     }
     
     
+    public String getTitle(){
+        return Title;
+    }
+    
+    public String getHeadQuarters(){
+        return HeadQuarters;
+    }
+    
+    public int getNumberOfProducts(){
+        return numberOfProducts;
+    }
+    
+    
 }
