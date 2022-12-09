@@ -10,12 +10,14 @@ package brands;
  */
 public class Product {
     
+    //DATA FIELDS
     private String name, type, Quality;
     private Brand brand;
     private double price;
     private static int numberOfProducts = 0;
     
     
+    //CONSTRUCTOR
     public Product(String name, String type, Brand brand){
         this.name = name;
         this.type = type;
@@ -25,6 +27,8 @@ public class Product {
         brand.setNumberOfProducts(brand.getNumberOfProducts()+1);
     }
 
+    
+    //GETTERS
     public String getName() {
         return name;
     }
@@ -49,6 +53,8 @@ public class Product {
         return numberOfProducts;
     }
 
+    
+    //SETTERS
     public void setName(String name) {
         this.name = name;
     }
@@ -74,7 +80,7 @@ public class Product {
     }
     
     
-    
+    //TOSTRING METHOD
     public String toString(){
         return brand.toString()+"\nThe product "+name+" is "+Quality+" "+type+", its price is "+(int)price+"$";
     }
