@@ -14,4 +14,11 @@ public class Loan {
     double loanAmount, interrest;
     int nbYears;
     
+    public Loan(String customername, double loanAmount, double interrest, int nbyears){
+        this.customerName = customername;
+        this.interrest = interrest;
+        this.loanAmount = loanAmount;
+        this.nbYears = nbyears;
+    }
+    
 }
