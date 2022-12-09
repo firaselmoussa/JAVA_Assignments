@@ -25,6 +25,14 @@ public class CarLoan extends Loan{
     public double getInsuranceFee() {
         return insuranceFee;
     }
+
+    public void setCarType(String carType) {
+        this.carType = carType;
+    }
+
+    public void setInsuranceFee(double insuranceFee) {
+        this.insuranceFee = insuranceFee;
+    }
     
     
     
