@@ -10,16 +10,19 @@ package brands;
  */
 public class Brand {
     
+    //DATA FIELDS
     private String Title, HeadQuarters;
     private int numberOfProducts = 0;
     
     
+    //CONSTRUCTOR
     public Brand(String name, String HeadQuarters){
         Title = name;
         this.HeadQuarters = HeadQuarters;
     }
     
     
+    //GETTERS
     public String getTitle(){
         return Title;
     }
@@ -33,6 +36,7 @@ public class Brand {
     }
     
     
+    //SETTERS
     public void setTitle(String Title){
         this.Title = Title;
     }
@@ -45,7 +49,7 @@ public class Brand {
         this.numberOfProducts = numberOfProducts;
     }
     
-    
+    //TO STRING METHOD
     public String toString(){
         return "Btrand: "+Title+", "+HeadQuarters+", "+numberOfProducts+" products";
     }
