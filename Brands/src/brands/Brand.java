@@ -33,4 +33,17 @@ public class Brand {
     }
     
     
+    public void setTitle(String Title){
+        this.Title = Title;
+    }
+    
+    public void setHeadQuarters(String HeadQuarters){
+        this.HeadQuarters = HeadQuarters;
+    }
+    
+    public void setNumberOfProducts(int numberOfProducts){
+        this.numberOfProducts = numberOfProducts;
+    }
+    
+    
 }
