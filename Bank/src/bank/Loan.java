@@ -52,10 +52,10 @@ public class Loan {
     public void setNbYears(int nbYears) {
         this.nbYears = nbYears;
     }
-    
-    
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Loan{" + "customerName=" + customerName + ", loanAmount=" + loanAmount + ", interrest=" + interrest + ", nbYears=" + nbYears + '}';
+    }
     
 }
