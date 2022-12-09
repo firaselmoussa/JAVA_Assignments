@@ -17,6 +17,16 @@ public class CarLoan extends Loan{
         this.carType = carType;
         this.insuranceFee = insuranceFee;
     }
+
+    public String getCarType() {
+        return carType;
+    }
+
+    public double getInsuranceFee() {
+        return insuranceFee;
+    }
+    
+    
     
     
     
