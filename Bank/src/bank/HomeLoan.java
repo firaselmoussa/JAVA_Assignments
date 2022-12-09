@@ -36,6 +36,10 @@ public class HomeLoan extends Loan{
     }
     
     
+    //FINAL AMOUNT METHOD: CALCULATES FINAL AMOUNT AFTER TAXATION
+    public double finalAmount(double tax){
+        return ((super.getLoanAmount()*Math.pow(1+super.getInterrest(), super.getNbYears())) + ((super.getLoanAmount()*Math.pow(1+super.getInterrest(), super.getNbYears()))*tax));
+    }
     
     
     
