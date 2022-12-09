@@ -10,10 +10,13 @@ package bank;
  */
 public class Loan {
     
+    //DATA FIELDS
     private String customerName;
     private double loanAmount, interrest;
     private int nbYears;
 
+    
+    //CONSTRUCTOR
     public Loan(String customerName, double loanAmount, double interrest, int nbYears) {
         this.customerName = customerName;
         this.loanAmount = loanAmount;
@@ -21,6 +24,7 @@ public class Loan {
         this.nbYears = nbYears;
     }
 
+    //GETTERS
     public String getCustomerName() {
         return customerName;
     }
@@ -37,6 +41,8 @@ public class Loan {
         return nbYears;
     }
 
+    
+    //SETTERS
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
@@ -53,6 +59,7 @@ public class Loan {
         this.nbYears = nbYears;
     }
 
+    //toSTRING
     @Override
     public String toString() {
         return "Loan{" + "customerName=" + customerName + ", loanAmount=" + loanAmount + ", interrest=" + interrest + ", nbYears=" + nbYears + '}';
