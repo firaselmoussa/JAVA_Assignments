@@ -48,7 +48,6 @@ public class HomeLoan extends Loan{
     }
 
     //TOSTRING METHOD
-    @Override
     public String toString() {
         return "HomeLoan{" + "homeAddress=" + homeAddress + ", nbOfRooms=" + nbOfRooms + '}';
     }

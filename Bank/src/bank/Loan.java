@@ -64,7 +64,7 @@ public class Loan {
     public void setNbYears(int nbYears) {
         this.nbYears = nbYears;
     }
-
+    
     //toSTRING
     @Override
     public String toString() {

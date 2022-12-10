@@ -50,7 +50,6 @@ public class CarLoan extends Loan{
 
     
     //TOSTRING METHOD
-    @Override
     public String toString() {
         return "CarLoan{" + "carType=" + carType + ", insuranceFee=" + insuranceFee + '}';
     }
