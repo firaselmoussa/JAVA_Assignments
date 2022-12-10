@@ -26,8 +26,16 @@ public class Loan {
             this.interrest = 5;
         else
             this.interrest = interrest;
-        this.loanAmount = loanAmount;
-        this.nbYears = nbYears;
+        
+        if(loanAmount < 0)
+            this.loanAmount = loanAmount*-1;
+        else
+            this.loanAmount = loanAmount;
+        if(loanAmount < 0)
+            this.nbYears = nbYears*-1;
+        else
+            this.nbYears = nbYears;
+        
     }
 
     //GETTERS
