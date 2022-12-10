@@ -18,7 +18,7 @@ public class Bank {
     public static void main(String[] args) {
         // TODO code application logic here
                 
-        
+        //CREATED ARRAY LIST & OBJECTS
         ArrayList<Loan> loans = new ArrayList<>();
         loans.add(new CarLoan("SUV", 499.9, "Jhon Doe", 6000, 7, 4));
         loans.add(new CarLoan("Minivan", 200.0, "Jhon Cena", 4000, 5, 2));
@@ -26,10 +26,12 @@ public class Bank {
         loans.add(new HomeLoan("CityY, StreetXX", 10, "Jhon Cena", 90000, 8, 12));
         
         
+        //DISPLAYED DATA
         for(int i = 0; i < loans.size(); i++){
             System.out.println(loans.get(i).toString());
         }
         
+        //DISPLAYED FINAL AMOUNT
         for(int i = 0; i < loans.size(); i++){
             if(loans.get(i) instanceof bank.CarLoan)
                 try{
@@ -46,6 +48,7 @@ public class Bank {
                 }
         }
        
+        //DISPLAYING INSURANCE FEE OF CAR_LOANS
         for(int i = 0; i < loans.size(); i++){
             if(loans.get(i) instanceof bank.CarLoan)
                 System.out.println(((CarLoan)loans.get(i)).getInsuranceFee());
