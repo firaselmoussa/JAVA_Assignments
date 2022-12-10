@@ -45,7 +45,7 @@ public class CarLoan extends Loan{
     
     //FINAL AMOUNT METHOD
     public double finalAmount(){
-        return super.getLoanAmount()+insuranceFee;
+        return super.getInterrest()+insuranceFee;
     }
 
     
