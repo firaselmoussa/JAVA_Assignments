@@ -18,7 +18,7 @@ public class Bank {
     public static void main(String[] args) {
         // TODO code application logic here
                 
-        Loan x = new CarLoan("SUV", 499.9, "Jhon Doe", 6000, 7, 4);
+        
         ArrayList<Loan> loans = new ArrayList<>();
         loans.add(new CarLoan("SUV", 499.9, "Jhon Doe", 6000, 7, 4));
         loans.add(new CarLoan("Minivan", 200.0, "Jhon Cena", 4000, 5, 2));
@@ -26,9 +26,13 @@ public class Bank {
         loans.add(new HomeLoan("CityY, StreetXX", 10, "Jhon Cena", 90000, 8, 12));
         
         
-//        System.out.println(loans.get(0).toString());
         for(int i = 0; i < loans.size(); i++){
             System.out.println(loans.get(i).toString());
+        }
+       
+        for(int i = 0; i < loans.size(); i++){
+            if(loans.get(i) instanceof bank.CarLoan)
+                System.out.println(((CarLoan)loans.get(i)).getInsuranceFee());
         }
         
 
