@@ -27,31 +27,39 @@ public class Bank {
         
         
         //DISPLAYED DATA
+        System.out.println("LOANS DATA: ");
         for(int i = 0; i < loans.size(); i++){
             System.out.println(loans.get(i).toString());
         }
         
         //DISPLAYED FINAL AMOUNT
+        System.out.print("Final Amount of Loans: ");
         for(int i = 0; i < loans.size(); i++){
             if(loans.get(i) instanceof bank.CarLoan)
                 try{
-                    System.out.println(((CarLoan)loans.get(i)).finalAmount());
+                    System.out.print(((CarLoan)loans.get(i)).finalAmount()+" ");
                 }catch(NoSuchMethodError e){
                     System.out.println(e);
                 }
                 
             else if(loans.get(i) instanceof bank.HomeLoan)
                 try{
-                    System.out.println(((HomeLoan)loans.get(i)).finalAmount(80));
+                    System.out.print(((HomeLoan)loans.get(i)).finalAmount(80)+" ");
                 }catch(NoSuchMethodError e){
                     System.out.println(e);
                 }
+            
+            //BREAKLINE
+            if(i >= loans.size()-1)
+                System.out.println("");
         }
-       
+        
         //DISPLAYING INSURANCE FEE OF CAR_LOANS
+        System.out.print("Insurance Fee of car Loans: ");
         for(int i = 0; i < loans.size(); i++){
             if(loans.get(i) instanceof bank.CarLoan)
-                System.out.println(((CarLoan)loans.get(i)).getInsuranceFee());
+                System.out.print(((CarLoan)loans.get(i)).getInsuranceFee()+" ");
+            
         }
         
 
