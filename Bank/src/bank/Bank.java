@@ -29,6 +29,22 @@ public class Bank {
         for(int i = 0; i < loans.size(); i++){
             System.out.println(loans.get(i).toString());
         }
+        
+        for(int i = 0; i < loans.size(); i++){
+            if(loans.get(i) instanceof bank.CarLoan)
+                try{
+                    System.out.println(((CarLoan)loans.get(i)).finalAmount());
+                }catch(NoSuchMethodError e){
+                    System.out.println(e);
+                }
+                
+            else if(loans.get(i) instanceof bank.HomeLoan)
+                try{
+                    System.out.println(((HomeLoan)loans.get(i)).finalAmount(80));
+                }catch(NoSuchMethodError e){
+                    System.out.println(e);
+                }
+        }
        
         for(int i = 0; i < loans.size(); i++){
             if(loans.get(i) instanceof bank.CarLoan)
