@@ -55,6 +55,29 @@ public class Bank {
                     }catch(InputMismatchException e){
                         System.out.println(e);
                     }
+            }else if(user_choice.equalsIgnoreCase("c")){    
+
+                    System.out.print("You are applying for a Car LOAN;\nEnter the Following Data:\nCar Type: ");
+                    try{
+                        String x = input.nextLine();
+                        String car_type = input.nextLine();
+                        System.out.print("Insurance Fee: ");
+                        double insurance_fee = input.nextDouble();
+                        System.out.print("Your Name: ");
+                        String customer_name = input.next();
+                        System.out.print("Loan Amount($): ");
+                        double loan_amount = input.nextDouble();
+                        System.out.print("Interest Amount: ");
+                        double interest = input.nextDouble();
+                        System.out.print("Number of years to pay: ");
+                        int nbOfYears = input.nextInt();
+
+                        loans.add(new CarLoan(car_type, insurance_fee, customer_name, loan_amount, interest, nbOfYears));
+
+                    }catch(InputMismatchException e){
+                        System.out.println(e);
+                    }
+                    
             }
                 
         
