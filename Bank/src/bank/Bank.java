@@ -5,6 +5,7 @@
 package bank;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -18,6 +19,10 @@ public class Bank {
     public static void main(String[] args) {
         // TODO code application logic here
                 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Choose Loan type:\nCar: 'c'\nHome: 'h'");
+        String user_choice = input.next();
+        
         //CREATED ARRAY LIST & OBJECTS
         ArrayList<Loan> loans = new ArrayList<>();
         loans.add(new CarLoan("SUV", 499.9, "Jhon Doe", 6000, 7, 4));
