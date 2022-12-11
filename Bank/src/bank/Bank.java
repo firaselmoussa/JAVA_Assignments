@@ -4,8 +4,11 @@
  */
 package bank;
 
+import java.awt.BorderLayout;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
+import javax.xml.transform.OutputKeys;
 
 /**
  *
@@ -18,13 +21,26 @@ public class Bank {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-                
-        Scanner input = new Scanner(System.in);
-        System.out.println("Choose Loan type:\nCar: 'c'\nHome: 'h'");
-        String user_choice = input.next();
         
         //CREATED ARRAY LIST & OBJECTS
         ArrayList<Loan> loans = new ArrayList<>();
+        
+        
+        Scanner input = new Scanner(System.in);
+        String user_choice;
+        
+        do{
+        System.out.println("Choose Loan type:\nCar: 'c'\nHome: 'h'\nExit: 'e'");
+        user_choice = input.next();
+        
+            
+                
+        
+        }while(!user_choice.equalsIgnoreCase("e"));
+        
+        System.out.println(loans.get(0).toString());
+////////////////////////////////////////////////////////////////////////////////
+        //CREATED ARRAY LIST & OBJECTS
         loans.add(new CarLoan("SUV", 499.9, "Jhon Doe", 6000, 7, 4));
         loans.add(new CarLoan("Minivan", 200.0, "Jhon Cena", 4000, 5, 2));
         loans.add(new HomeLoan("CityX, StreetXX", 4, "Jhon Doe", 40000, 6, 9));
