@@ -21,6 +21,7 @@ public class Bank {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("WELCOME TO THE BANK!\n*********************************************************************************************\n");
         
         //CREATED ARRAY LIST & OBJECTS
         ArrayList<Loan> loans = new ArrayList<>();
@@ -33,13 +34,15 @@ public class Bank {
         do{
             
         //PROMPTING THE USER TO CHOOSE LOAN TYPE
-        System.out.println("Choose Loan type:\nCar: 'c'\nHome: 'h'\nExit: 'e'");
+        System.out.println("*********************************************************************************************\n"
+                + "Choose Loan type:\nCar: 'c'\nHome: 'h'\nExit: 'e'");
         user_choice = input.next();
         
             //CREATING HOME-LOAN OBJECT FROM USERS INPUT
             if(user_choice.equalsIgnoreCase("h")){
 
-                    System.out.print("You are applying for a HOME LOAN;\nEnter the Following Data:\nHome Address (city, street): ");
+                    System.out.print("*********************************************************************************************\n"
+                            + "You are applying for a HOME LOAN;\nEnter the Following Data:\nHome Address (city, street): ");
                     try{
                         String x = input.nextLine();
                         String home_adress = input.nextLine();
@@ -63,7 +66,8 @@ public class Bank {
             //CREATING CAR-LOAN OBJECT FROM USERS INPUT
             }else if(user_choice.equalsIgnoreCase("c")){    
 
-                    System.out.print("You are applying for a Car LOAN;\nEnter the Following Data:\nCar Type: ");
+                    System.out.print("*********************************************************************************************\n"
+                            + "You are applying for a Car LOAN;\nEnter the Following Data:\nCar Type: ");
                     try{
                         String x = input.nextLine();
                         String car_type = input.nextLine();
@@ -87,7 +91,7 @@ public class Bank {
             //INFORMING THE USER OF INVALID INPUT        
             }else{ 
                 if(!user_choice.equalsIgnoreCase("e"))
-                    System.out.println("Invalid option");
+                    System.out.println("\nInvalid option\n");
             }
                 
         //ELIMINATING THE LOOP IF USER CHOSE TO
@@ -96,12 +100,15 @@ public class Bank {
         
 ////////////////////////////////////////////////////////////////////////////////
         
+        System.out.println("\n*********************************************************************************************\n");
         
         //DISPLAYED DATA
         System.out.println("LOANS DATA: ");
         for(int i = 0; i < loans.size(); i++){
             System.out.println(loans.get(i).toString());
         }
+        
+        System.out.println("");
         
         //DISPLAYED FINAL AMOUNT
         System.out.print("Final Amount of Loans: ");
@@ -124,6 +131,9 @@ public class Bank {
             if(i >= loans.size()-1)
                 System.out.println("");
         }
+        
+        System.out.println("");
+        
         
         //DISPLAYING INSURANCE FEE OF CAR_LOANS
         System.out.print("Insurance Fee of car Loans: ");
