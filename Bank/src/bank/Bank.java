@@ -86,13 +86,8 @@ public class Bank {
         
         }while(!user_choice.equalsIgnoreCase("e"));
         
-        System.out.println(loans.get(0).toString());
+        
 ////////////////////////////////////////////////////////////////////////////////
-        //CREATED ARRAY LIST & OBJECTS
-        loans.add(new CarLoan("SUV", 499.9, "Jhon Doe", 6000, 7, 4));
-        loans.add(new CarLoan("Minivan", 200.0, "Jhon Cena", 4000, 5, 2));
-        loans.add(new HomeLoan("CityX, StreetXX", 4, "Jhon Doe", 40000, 6, 9));
-        loans.add(new HomeLoan("CityY, StreetXX", 10, "Jhon Cena", 90000, 8, 12));
         
         
         //DISPLAYED DATA
