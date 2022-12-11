@@ -25,14 +25,18 @@ public class Bank {
         //CREATED ARRAY LIST & OBJECTS
         ArrayList<Loan> loans = new ArrayList<>();
         
-        
+        //SCANNER
         Scanner input = new Scanner(System.in);
         String user_choice;
         
+        //USER DATA LOOP
         do{
+            
+        //PROMPTING THE USER TO CHOOSE LOAN TYPE
         System.out.println("Choose Loan type:\nCar: 'c'\nHome: 'h'\nExit: 'e'");
         user_choice = input.next();
         
+            //CREATING HOME-LOAN OBJECT FROM USERS INPUT
             if(user_choice.equalsIgnoreCase("h")){
 
                     System.out.print("You are applying for a HOME LOAN;\nEnter the Following Data:\nHome Address (city, street): ");
@@ -55,6 +59,8 @@ public class Bank {
                     }catch(InputMismatchException e){
                         System.out.println(e);
                     }
+                    
+            //CREATING CAR-LOAN OBJECT FROM USERS INPUT
             }else if(user_choice.equalsIgnoreCase("c")){    
 
                     System.out.print("You are applying for a Car LOAN;\nEnter the Following Data:\nCar Type: ");
@@ -78,12 +84,13 @@ public class Bank {
                         System.out.println(e);
                     }
                     
+            //INFORMING THE USER OF INVALID INPUT        
             }else{ 
                 if(!user_choice.equalsIgnoreCase("e"))
                     System.out.println("Invalid option");
             }
                 
-        
+        //ELIMINATING THE LOOP IF USER CHOSE TO
         }while(!user_choice.equalsIgnoreCase("e"));
         
         
