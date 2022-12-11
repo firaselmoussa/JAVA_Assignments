@@ -78,6 +78,9 @@ public class Bank {
                         System.out.println(e);
                     }
                     
+            }else{ 
+                if(!user_choice.equalsIgnoreCase("e"))
+                    System.out.println("Invalid option");
             }
                 
         
