@@ -33,7 +33,29 @@ public class Bank {
         System.out.println("Choose Loan type:\nCar: 'c'\nHome: 'h'\nExit: 'e'");
         user_choice = input.next();
         
-            
+            if(user_choice.equalsIgnoreCase("h")){
+
+                    System.out.print("You are applying for a HOME LOAN;\nEnter the Following Data:\nHome Address (city, street): ");
+                    try{
+                        String x = input.nextLine();
+                        String home_adress = input.nextLine();
+                        System.out.print("Number of rooms: ");
+                        int nbOfRooms = input.nextInt();
+                        System.out.print("Your Name: ");
+                        String customer_name = input.next();
+                        System.out.print("Loan Amount($): ");
+                        double loan_amount = input.nextDouble();
+                        System.out.print("Interest Amount: ");
+                        double interest = input.nextDouble();
+                        System.out.print("Number of years to pay: ");
+                        int nbOfYears = input.nextInt();
+
+                        loans.add(new HomeLoan(home_adress, nbOfRooms, customer_name, loan_amount, interest, nbOfYears));
+
+                    }catch(InputMismatchException e){
+                        System.out.println(e);
+                    }
+            }
                 
         
         }while(!user_choice.equalsIgnoreCase("e"));
