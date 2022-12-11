@@ -4,11 +4,9 @@
  */
 package bank;
 
-import java.awt.BorderLayout;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import javax.xml.transform.OutputKeys;
 
 /**
  *
@@ -108,6 +106,7 @@ public class Bank {
             System.out.println(loans.get(i).toString());
         }
         
+        //BREAKLINE
         System.out.println("");
         
         //DISPLAYED FINAL AMOUNT
@@ -132,6 +131,7 @@ public class Bank {
                 System.out.println("");
         }
         
+        //BREAKLINE
         System.out.println("");
         
         
