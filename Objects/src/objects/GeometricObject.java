@@ -9,5 +9,7 @@ package objects;
  * @author Firas
  */
 public class GeometricObject {
+    String color;
+    boolean isFilled;
     
 }
