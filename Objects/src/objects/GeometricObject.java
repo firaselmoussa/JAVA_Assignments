@@ -21,5 +21,25 @@ public class GeometricObject {
         this.color = color;
         this.isFilled = isFilled;
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public boolean isIsFilled() {
+        return isFilled;
+    }
+    
+    
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setIsFilled(boolean isFilled) {
+        this.isFilled = isFilled;
+    }
+    
+    
+    
     
 }
