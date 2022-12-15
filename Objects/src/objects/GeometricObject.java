@@ -40,6 +40,9 @@ public class GeometricObject {
     }
     
     
-    
+    @Override
+    public String toString() {
+        return "GeometricObject{" + "color=" + color + ", isFilled=" + isFilled + '}';
+    }
     
 }
