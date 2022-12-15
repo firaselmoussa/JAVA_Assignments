@@ -9,9 +9,12 @@ package objects;
  * @author Firas
  */
 public class Triangle extends GeometricObject{
+    
+    //DATA FIELDS
     private double side1, side2, side3 = 1.0;
     private double area, perimeter;
     
+    //NO-ARGS CONSTRUCTOR
     public Triangle() {
         super();
         this.side1 = side1;
@@ -21,6 +24,7 @@ public class Triangle extends GeometricObject{
         area = Math.sqrt(perimeter*(perimeter-side1)*(perimeter-side2)*(perimeter-side3));
     }
     
+    //CONSTRUCTOR
     public Triangle(double side1, double side2, double side3, String color, boolean isFilled) {
         super(color, isFilled);
         this.side1 = side1;
@@ -30,6 +34,8 @@ public class Triangle extends GeometricObject{
         area = Math.sqrt(perimeter*(perimeter-side1)*(perimeter-side2)*(perimeter-side3));
     }
 
+    
+    //GETTERS
     public double getSide1() {
         return side1;
     }
@@ -54,6 +60,8 @@ public class Triangle extends GeometricObject{
         return isFilled;
     }
 
+    
+    //SETTERS
     public void setSide1(double side1) {
         this.side1 = side1;
     }
@@ -82,6 +90,8 @@ public class Triangle extends GeometricObject{
         this.isFilled = isFilled;
     }
 
+    
+    //TOSTRING METHOD
     @Override
     public String toString() {
         return "Triangle{" + "side1=" + side1 + ", side2=" + side2 + ", side3=" + side3 + ", area=" + area + ", perimeter=" + perimeter + '}';
