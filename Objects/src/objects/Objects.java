@@ -23,12 +23,13 @@ public class Objects {
         
         do{
             
-            System.out.println("NEW TRIANGLE\n"
+            System.out.print("NEW TRIANGLE\n"
                     + "---------------------------------------------------------"
-                    + "Choose color: ");
+                    + "\n\nChoose color: ");
             String color = scan.next();
             
-                System.out.println("Choose isFilled('true or false): ");
+            try{
+                System.out.print("Choose isFilled('true or false): ");
                 boolean isFilled;
                 if(scan.next().equalsIgnoreCase("true")){
                     isFilled = true;
@@ -36,17 +37,23 @@ public class Objects {
                     isFilled = false;
                 }
 
-                System.out.println("Choose side1:");
+                System.out.print("Choose side1:");
                 double s1 = scan.nextDouble();
-                System.out.println("Choose side3:");
+                System.out.print("Choose side2:");
                 double s2 = scan.nextDouble();
-                System.out.println("Choose side3:");
+                System.out.print("Choose side3:");
                 double s3 = scan.nextDouble();
 
 
                 Triangle new_t = new Triangle(s1, s2, s3, color, isFilled);
                 System.out.println(new_t.toString());
+
+            }catch(InputMismatchException e){
+              
+                Class classX = (scan.next()).getClass();
+                System.out.println(e + "  =>  " +classX);
                 
+            }
             
             System.out.println("Do you want to create another triangle? ('YES' or 'NO')");
             loop_termination = scan.next();
