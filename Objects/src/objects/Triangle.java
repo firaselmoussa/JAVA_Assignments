@@ -53,6 +53,34 @@ public class Triangle extends GeometricObject{
     public boolean isIsFilled() {
         return isFilled;
     }
+
+    public void setSide1(double side1) {
+        this.side1 = side1;
+    }
+
+    public void setSide2(double side2) {
+        this.side2 = side2;
+    }
+
+    public void setSide3(double side3) {
+        this.side3 = side3;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public void setPerimeter(double perimeter) {
+        this.perimeter = perimeter;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setIsFilled(boolean isFilled) {
+        this.isFilled = isFilled;
+    }
     
     
 }
