@@ -17,4 +17,9 @@ public class GeometricObject {
         isFilled = false;
     }
     
+    public GeometricObject(String color, boolean isFilled) {
+        this.color = color;
+        this.isFilled = isFilled;
+    }
+    
 }
