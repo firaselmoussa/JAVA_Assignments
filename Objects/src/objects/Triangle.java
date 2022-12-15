@@ -29,6 +29,30 @@ public class Triangle extends GeometricObject{
         perimeter = side1+side2+side3;
         area = Math.sqrt(perimeter*(perimeter-side1)*(perimeter-side2)*(perimeter-side3));
     }
+
+    public double getSide1() {
+        return side1;
+    }
+
+    public double getSide2() {
+        return side2;
+    }
+
+    public double getSide3() {
+        return side3;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public boolean isIsFilled() {
+        return isFilled;
+    }
     
     
 }
