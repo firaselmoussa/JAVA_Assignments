@@ -9,5 +9,6 @@ package objects;
  * @author Firas
  */
 public class Triangle {
-    
+    private double side1, side2, side3 = 1.0;
+    private double area, perimeter;
 }
