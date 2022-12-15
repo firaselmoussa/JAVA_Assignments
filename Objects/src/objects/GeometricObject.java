@@ -12,4 +12,9 @@ public class GeometricObject {
     String color;
     boolean isFilled;
     
+    public GeometricObject() {
+        color = "Black";
+        isFilled = false;
+    }
+    
 }
