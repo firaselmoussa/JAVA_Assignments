@@ -140,6 +140,82 @@ public class CalculatorFrame extends JFrame implements ActionListener{
         
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == nb_zero){
+            input.setText(input.getText()+"0");
+            equation += "0";
+        }else if(e.getSource() == nb_one){
+            input.setText(input.getText()+"1");
+            equation += "1";
+        }else if(e.getSource() == nb_two){
+            input.setText(input.getText()+"2");
+            equation += "2";
+        }else if(e.getSource() == nb_three){
+            input.setText(input.getText()+"3");
+            equation += "3";
+        }else if(e.getSource() == nb_four){
+            input.setText(input.getText()+"4");
+            equation += "4";
+        }else if(e.getSource() == nb_five){
+            input.setText(input.getText()+"5");
+            equation += "5";
+        }else if(e.getSource() == nb_six){
+            input.setText(input.getText()+"6");
+            equation += "6";
+        }else if(e.getSource() == nb_seven){
+            input.setText(input.getText()+"7");
+            equation += "7";
+        }else if(e.getSource() == nb_eight){
+            input.setText(input.getText()+"8");
+            equation += "8";
+        }else if(e.getSource() == nb_nine){
+            input.setText(input.getText()+"9");
+            equation += "9";
+        }else if(e.getSource() == plus_btn){
+            input.setText(input.getText()+"+");
+            equation += "+";
+        }else if(e.getSource() == minus_btn){
+            input.setText(input.getText()+"-");
+            equation += "-";
+        }else if(e.getSource() == devide_btn){
+            input.setText(input.getText()+"÷");
+            equation += "/";
+        }else if(e.getSource() == multiply_btn){
+            input.setText(input.getText()+"×");
+            equation += "*";
+        }else if(e.getSource() == dot_btn){
+            input.setText(input.getText()+".");
+            equation += ".";
+        }else if(e.getSource() == power_btn){
+            input.setText(input.getText()+"^");
+            equation += "^";
+        }else if(e.getSource() == sqrt_btn){
+            input.setText(input.getText()+"√");
+            equation += "sqrt";
+        }else if(e.getSource() == sin_btn){
+            input.setText(input.getText()+"sin");
+            equation += "sin";
+        }else if(e.getSource() == cos_btn){
+            input.setText(input.getText()+"cos");
+            equation += "cos";
+        }else if(e.getSource() == left_b_btn){
+            input.setText(input.getText()+"(");
+            equation += "(";
+        }else if(e.getSource() == right_b_btn){
+            input.setText(input.getText()+")");
+            equation += ")";
+        }else if(e.getSource() == reset_btn){
+            input.setText("");
+            output.setText("");
+            equation = "";
+        }else if(e.getSource() == delete_btn){
+            String str = input.getText();
+            str = str.replace(str.substring(str.length()-1), "");
+            input.setText(str);
+            equation = str;
+        }else if(e.getSource() == equal_btn){
+            Ans = eval(equation);
+            output.setText(""+Ans);
+        }
         
     }
     
