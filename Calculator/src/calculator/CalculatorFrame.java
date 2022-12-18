@@ -69,6 +69,9 @@ public class CalculatorFrame extends JFrame implements ActionListener{
             JPanel operations_panel = new JPanel();
             operations_panel.setSize(new Dimension((int) (this.getWidth()*.8)-2, (int) (this.getHeight()*.7)));
             operations_panel.setLayout(new GridLayout(6, 4, 2, 2));
+            
+            bottom_panel.add(operations_panel, BorderLayout.EAST);
+            bottom_panel.add(numbers_panel, BorderLayout.WEST); 
 
             this.pack();
             this.setVisible(true);
