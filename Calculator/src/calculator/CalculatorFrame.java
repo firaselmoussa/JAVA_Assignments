@@ -130,6 +130,9 @@ public class CalculatorFrame extends JFrame implements ActionListener{
             operations_panel.add(delete_btn);
             
 
+            this.add(input, BorderLayout.NORTH);
+            this.add(output, BorderLayout.CENTER);
+            this.add(bottom_panel, BorderLayout.SOUTH);
             this.pack();
             this.setVisible(true);
     }
