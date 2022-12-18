@@ -116,6 +116,18 @@ public class CalculatorFrame extends JFrame implements ActionListener{
             numbers_panel.add(dot_btn);
             numbers_panel.add(equal_btn);
             
+            operations_panel.add(left_b_btn);
+            operations_panel.add(right_b_btn);
+            operations_panel.add(sin_btn);
+            operations_panel.add(cos_btn);
+            operations_panel.add(power_btn);
+            operations_panel.add(sqrt_btn);
+            operations_panel.add(devide_btn);
+            operations_panel.add(multiply_btn);
+            operations_panel.add(minus_btn);
+            operations_panel.add(plus_btn);
+            operations_panel.add(reset_btn);
+            operations_panel.add(delete_btn);
             
 
             this.pack();
