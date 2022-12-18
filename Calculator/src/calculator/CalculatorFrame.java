@@ -75,6 +75,32 @@ public class CalculatorFrame extends JFrame implements ActionListener{
             
             input.setPreferredSize(new Dimension(250, 40));
             output.setPreferredSize(new Dimension(250, 40));
+            
+            
+            nb_zero.addActionListener(this);
+            nb_one.addActionListener(this);
+            nb_two.addActionListener(this);
+            nb_three.addActionListener(this);
+            nb_four.addActionListener(this);
+            nb_five.addActionListener(this);
+            nb_six.addActionListener(this);
+            nb_seven.addActionListener(this);
+            nb_eight.addActionListener(this);
+            nb_nine.addActionListener(this);
+            minus_btn.addActionListener(this);
+            plus_btn.addActionListener(this);
+            multiply_btn.addActionListener(this);
+            devide_btn.addActionListener(this);
+            dot_btn.addActionListener(this);
+            equal_btn.addActionListener(this);
+            reset_btn.addActionListener(this);
+            delete_btn.addActionListener(this);
+            sqrt_btn.addActionListener(this);
+            power_btn.addActionListener(this);
+            left_b_btn.addActionListener(this);
+            right_b_btn.addActionListener(this);
+            sin_btn.addActionListener(this);
+            cos_btn.addActionListener(this);
 
             this.pack();
             this.setVisible(true);
