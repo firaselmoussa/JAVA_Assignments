@@ -72,6 +72,9 @@ public class CalculatorFrame extends JFrame implements ActionListener{
             
             bottom_panel.add(operations_panel, BorderLayout.EAST);
             bottom_panel.add(numbers_panel, BorderLayout.WEST); 
+            
+            input.setPreferredSize(new Dimension(250, 40));
+            output.setPreferredSize(new Dimension(250, 40));
 
             this.pack();
             this.setVisible(true);
