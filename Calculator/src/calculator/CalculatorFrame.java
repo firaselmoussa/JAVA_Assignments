@@ -101,6 +101,22 @@ public class CalculatorFrame extends JFrame implements ActionListener{
             right_b_btn.addActionListener(this);
             sin_btn.addActionListener(this);
             cos_btn.addActionListener(this);
+            
+            
+            numbers_panel.add(nb_zero);
+            numbers_panel.add(nb_one);
+            numbers_panel.add(nb_two);
+            numbers_panel.add(nb_three);
+            numbers_panel.add(nb_four);
+            numbers_panel.add(nb_five);
+            numbers_panel.add(nb_six);
+            numbers_panel.add(nb_seven);
+            numbers_panel.add(nb_eight);
+            numbers_panel.add(nb_nine);
+            numbers_panel.add(dot_btn);
+            numbers_panel.add(equal_btn);
+            
+            
 
             this.pack();
             this.setVisible(true);
