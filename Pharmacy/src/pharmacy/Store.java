@@ -4,8 +4,9 @@
  */
 package pharmacy;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
-
+import pharmacy.OverCounter;
 /**
  *
  * @author Firas
@@ -55,7 +56,42 @@ public class Store {
     }
     
     
+    public void addMedicine(Medicine m){
+        medicines.add(m);
+    }
+    
+    public double buyMedicine(String name){
+        double price = 0;
+        Medicine m;
+        
+        for(int i = 0; i < medicines.size(); i++){
+            m = medicines.get(i);
+            if(m.equals(name)){
+                if (m instanceof OverCounter)
+                    price = ((OverCounter) m).findPriceAfterTax();
+            }    
+        }
+        
+        return price;
+    }
 
+    
+    public ArrayList<Medicine> getOverCounterMeds(){
+        ArrayList<Medicine> overCounterMeds = new ArrayList<>();
+        Medicine m;
+        
+        for(int i = 0; i < medicines.size(); i++){
+            m = medicines.get(i);
+            
+            if(m instanceof OverCounter)
+                overCounterMeds.add(m);
+        }
+        
+        return overCounterMeds;
+    }
+    
+    
+    
     @Override
     public String toString() {
         return "Store{" + "name=" + name + ", location=" + location + ", medicines=" + medicines + ", number_of_medicines=" + number_of_medicines + '}';
