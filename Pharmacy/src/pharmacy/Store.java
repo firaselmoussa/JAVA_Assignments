@@ -22,6 +22,40 @@ public class Store {
         this.number_of_medicines = number_of_medicines;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public LinkedList<Medicine> getMedicines() {
+        return medicines;
+    }
+
+    public int getNumber_of_medicines() {
+        return number_of_medicines;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public void setMedicines(LinkedList<Medicine> medicines) {
+        this.medicines = medicines;
+    }
+
+    public void setNumber_of_medicines(int number_of_medicines) {
+        this.number_of_medicines = number_of_medicines;
+    }
+    
+    
+
     @Override
     public String toString() {
         return "Store{" + "name=" + name + ", location=" + location + ", medicines=" + medicines + ", number_of_medicines=" + number_of_medicines + '}';
