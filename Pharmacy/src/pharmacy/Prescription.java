@@ -10,7 +10,7 @@ package pharmacy;
  */
 public class Prescription extends Medicine{
     
-    String code;
+    private String code;
 
     public Prescription(String code, String name, double price) {
         super(name, price);
