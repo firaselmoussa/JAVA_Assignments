@@ -10,9 +10,24 @@ package pharmacy;
  */
 public class OverCounter extends Medicine implements Taxable{
 
+    private boolean isSupplement;
+
+    public OverCounter(boolean isSupplement, String name, double price) {
+        super(name, price);
+        this.isSupplement = isSupplement;
+    }
+    
+    
+    
     @Override
     public double findPriceAfterTax() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+    @Override
+    public String toString() {
+        return "OverCounter{" + "isSupplement=" + isSupplement + '}';
+    }
+    
     
 }
