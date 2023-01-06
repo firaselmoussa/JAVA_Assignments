@@ -16,6 +16,32 @@ public class OverCounter extends Medicine implements Taxable{
         super(name, price);
         this.isSupplement = isSupplement;
     }
+
+    public boolean isIsSupplement() {
+        return isSupplement;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+    
+    
+
+    public void setIsSupplement(boolean isSupplement) {
+        this.isSupplement = isSupplement;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
     
     
     
