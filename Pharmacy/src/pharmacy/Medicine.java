@@ -8,7 +8,7 @@ package pharmacy;
  *
  * @author Firas
  */
-public class Medicine {
+public abstract class Medicine {
     
     protected String name;
     protected double price;
