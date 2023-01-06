@@ -10,4 +10,18 @@ package pharmacy;
  */
 public class Medicine {
     
+    protected String name;
+    protected double price;
+
+    public Medicine(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Medicine{" + "name=" + name + ", price=" + price + '}';
+    }
+    
+    
 }
