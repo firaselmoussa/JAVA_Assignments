@@ -47,7 +47,7 @@ public class OverCounter extends Medicine implements Taxable{
     
     @Override
     public double findPriceAfterTax() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    return this.price*1.1;
     }
 
     @Override
