@@ -69,6 +69,8 @@ public class Store {
             if(m.equals(name)){
                 if (m instanceof OverCounter)
                     price = ((OverCounter) m).findPriceAfterTax();
+                else if(m instanceof Prescription)
+                    price = m.getPrice();
             }    
         }
         
