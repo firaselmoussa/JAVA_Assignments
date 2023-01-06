@@ -8,6 +8,20 @@ package pharmacy;
  *
  * @author Firas
  */
-public class Prescription {
+public class Prescription extends Medicine{
+    
+    String code;
+
+    public Prescription(String code, String name, double price) {
+        super(name, price);
+        this.code = code;
+    }
+
+    @Override
+    public String toString() {
+        return "Prescription{" + "code=" + code + '}';
+    }
+    
+    
     
 }
