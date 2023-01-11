@@ -4,10 +4,21 @@
  */
 package travel;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Firas
  */
 public class Ticket {
+    private String ticketNumber;
+    private static int ticketsCounter;
+    private ArrayList<Trip> trips;
+
+    public Ticket(){
+        ticketsCounter++;
+        ticketNumber = "TN"+ticketsCounter;
+        ArrayList<Trip> trips = new ArrayList<>();
+    }
     
 }
