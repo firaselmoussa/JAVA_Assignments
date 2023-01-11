@@ -9,5 +9,16 @@ package travel;
  * @author Firas
  */
 public class Trip {
+    private String departureCity, arrivalCity;
+    private double basicPrice;
+
+    public Trip(String departureCity, String arrivalCity, double basicPrice) {
+        if (basicPrice < 0)
+            throw new IllegalArgumentException();
+        this.departureCity = departureCity;
+        this.arrivalCity = arrivalCity;
+        this.basicPrice = basicPrice;
+    }
+    
     
 }
