@@ -21,4 +21,10 @@ public class Ticket {
         ArrayList<Trip> trips = new ArrayList<>();
     }
     
+    public void addTrip(Trip t){
+        trips.add(t);
+    }
+    
+    
+    
 }
