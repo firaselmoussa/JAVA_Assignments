@@ -11,6 +11,12 @@ package travel;
 public class Flight extends Trip implements Economize{
     private String seatClass;
 
+    public Flight(String seatClass, String departureCity, String arrivalCity, double basicPrice) {
+        super(departureCity, arrivalCity, basicPrice);
+        this.seatClass = seatClass;
+    }
+
+    
     @Override
     public double calculateCost() {
         
