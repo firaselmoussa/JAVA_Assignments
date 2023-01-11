@@ -18,7 +18,6 @@ public class TrainTrip extends Trip implements Economize{
         this.isVIP = isVIP;
     }
     
-  
 
     //ABSTRACT, CALCULATE COST
     @Override
@@ -40,7 +39,7 @@ public class TrainTrip extends Trip implements Economize{
     //TO STRING
     @Override
     public String toString() {
-        String s = "A train trip departing from "+this.getDepartureCity()+" to "+this.getArrivalCity()+" for a basic price of 270$.";
+        String s = "A train trip departing from "+this.getDepartureCity()+" to "+this.getArrivalCity()+" for a basic price of "+this.getBasicPrice()+"$.";
         if(isVIP)
             s += "\nIt is a VIP reservation.";
         else
