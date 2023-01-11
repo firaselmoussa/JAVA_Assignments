@@ -11,20 +11,24 @@ import java.util.ArrayList;
  * @author Firas
  */
 public class Ticket {
+    //DATA FIELDS
     private String ticketNumber;
     private static int ticketsCounter;
     private ArrayList<Trip> trips;
 
+    //CONSTRUCTOR
     public Ticket(){
         ticketsCounter++;
         ticketNumber = "TN"+ticketsCounter;
         ArrayList<Trip> trips = new ArrayList<>();
     }
     
+    //ABSTRACT, ADDTRIP
     public void addTrip(Trip t){
         trips.add(t);
     }
     
+    //ABSTRACT, REDUCE COST
     public void reduceCost(){
         for(int i = 0; i < trips.size(); i++){
             if(trips.get(i) instanceof TrainTrip)
@@ -34,6 +38,7 @@ public class Ticket {
         }
     }
 
+    //TO STRING
     @Override
     public String toString() {
         String s = "The ticket "+ticketNumber+" covers the following trips:\n";
