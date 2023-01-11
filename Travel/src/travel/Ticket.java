@@ -25,6 +25,25 @@ public class Ticket {
         trips.add(t);
     }
     
+    public void reduceCost(){
+        for(int i = 0; i < trips.size(); i++){
+            if(trips.get(i) instanceof TrainTrip)
+                ((TrainTrip)trips.get(i)).economize();
+            else if(trips.get(i) instanceof Flight)
+                ((Flight)trips.get(i)).economize();
+        }
+    }
+
+    @Override
+    public String toString() {
+        String s = "The ticket "+ticketNumber+" covers the following trips:\n";
+        for(int i = 0; i < trips.size(); i++){
+            s += i+". "+trips.get(i).toString()+"\n";
+        }
+        return s;
+    }
+    
+    
     
     
 }
