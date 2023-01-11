@@ -20,7 +20,7 @@ public class Ticket {
     public Ticket(){
         ticketsCounter++;
         ticketNumber = "TN"+ticketsCounter;
-        ArrayList<Trip> trips = new ArrayList<>();
+        trips = new ArrayList<>();
     }
     
     //ABSTRACT, ADDTRIP

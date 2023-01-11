@@ -1,3 +1,8 @@
+
+import travel.Flight;
+import travel.Ticket;
+import travel.TrainTrip;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
@@ -14,6 +19,22 @@ public class Travel {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Ticket myTicket = new Ticket();
+        
+        myTicket.addTrip(new TrainTrip(true, "Prauge", "Vienna", 50));
+        myTicket.addTrip(new TrainTrip(false, "Vienna", "Venice", 70));
+        myTicket.addTrip(new Flight("First Class", "Venice", "Madrid", 170));
+        
+        System.out.println(myTicket.toString());
+        
+        myTicket.reduceCost();
+        
+        System.out.println(myTicket.toString());
+        
+        
+        
+        
     }
     
 }
