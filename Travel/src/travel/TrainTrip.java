@@ -20,14 +20,17 @@ public class TrainTrip extends Trip implements Economize{
 
     @Override
     public double calculateCost() {
-        
-        return 0;
+        double cost = this.getBasicPrice();
+        if(isVIP)
+            cost =+100;
+            
+        return cost;
         
     }
 
     @Override
     public void economize() {
-        
+        isVIP = false;
     }
 
    
