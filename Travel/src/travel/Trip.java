@@ -8,18 +8,24 @@ package travel;
  *
  * @author Firas
  */
-public class Trip {
+public abstract class Trip {
+    
+    //DATA FIELDS
     private String departureCity, arrivalCity;
     private double basicPrice;
 
+    //CONSTRUCTOR
     public Trip(String departureCity, String arrivalCity, double basicPrice) {
-        if (basicPrice < 0)
-            throw new IllegalArgumentException();
+        
+        if (basicPrice < 0) 
+            throw new IllegalArgumentException();   //THROWING EXCEPTION IF PRICE IS NEGATIVE
+        
         this.departureCity = departureCity;
         this.arrivalCity = arrivalCity;
         this.basicPrice = basicPrice;
     }
 
+    //GETTERS
     public String getDepartureCity() {
         return departureCity;
     }
@@ -32,6 +38,7 @@ public class Trip {
         return basicPrice;
     }
 
+    //SETTERS
     public void setDepartureCity(String departureCity) {
         this.departureCity = departureCity;
     }
@@ -45,6 +52,7 @@ public class Trip {
     }
     
     
-    
+    //ABSTRACT METHOD
+    public abstract double calculateCost();
     
 }
