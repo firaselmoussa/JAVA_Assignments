@@ -26,6 +26,8 @@ public class Travel {
         myTicket.addTrip(new TrainTrip(false, "Vienna", "Venice", 70));
         myTicket.addTrip(new Flight("First Class", "Venice", "Madrid", 170));
         
+        System.out.println("Total cost of the ticket prior economizing: $"+myTicket.getTotalCost());
+        
         System.out.println(myTicket.toString());
         
         myTicket.reduceCost();
@@ -33,7 +35,7 @@ public class Travel {
         System.out.println(myTicket.toString());
         
         
-        
+        System.out.println("Total cost of the ticket After economizing: $"+myTicket.getTotalCost());
         
     }
     

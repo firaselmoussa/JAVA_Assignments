@@ -37,6 +37,20 @@ public class Ticket {
                 ((Flight)trips.get(i)).economize();
         }
     }
+    
+    //GET TOTAL COST
+    public double getTotalCost(){
+        double totalCost = 0;
+        
+        for(int i = 0; i < trips.size(); i++){
+            if(trips.get(i) instanceof TrainTrip)
+                totalCost += ((TrainTrip)trips.get(i)).calculateCost();
+            else if(trips.get(i) instanceof Flight)
+                totalCost += ((Flight)trips.get(i)).calculateCost();
+        }
+        
+        return totalCost;
+    }
 
     //TO STRING
     @Override
