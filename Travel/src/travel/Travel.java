@@ -22,9 +22,15 @@ public class Travel {
         
         Ticket myTicket = new Ticket();
         
+        try{
+            
         myTicket.addTrip(new TrainTrip(true, "Prauge", "Vienna", 50));
         myTicket.addTrip(new TrainTrip(false, "Vienna", "Venice", 70));
         myTicket.addTrip(new Flight("First Class", "Venice", "Madrid", 170));
+        
+        }catch(IllegalArgumentException e){
+            e.printStackTrace(System.out);
+        }
         
         System.out.println("Total cost of the ticket prior economizing: $"+myTicket.getTotalCost());
         
