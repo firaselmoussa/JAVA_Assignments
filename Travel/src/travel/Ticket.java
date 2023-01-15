@@ -57,12 +57,10 @@ public class Ticket {
     public String toString() {
         String s = "The ticket "+ticketNumber+" covers the following trips:\n";
         for(int i = 0; i < trips.size(); i++){
-            s += i+". "+trips.get(i).toString()+"\n";
+            s += i+1+". "+trips.get(i).toString()+"\n";
         }
         return s;
     }
-    
-    
-    
+ 
     
 }

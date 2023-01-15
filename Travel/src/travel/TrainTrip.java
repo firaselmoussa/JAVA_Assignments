@@ -24,7 +24,7 @@ public class TrainTrip extends Trip implements Economize{
     public double calculateCost() {
         double cost = this.getBasicPrice();
         if(isVIP)
-            cost =+100;
+            cost +=100;
             
         return cost;
         
